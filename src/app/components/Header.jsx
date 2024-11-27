@@ -1,4 +1,4 @@
-// components/Header.js
+import React from 'react';
 const Header = () => {
   return (
     <header className="bg-green-700 text-white p-4">

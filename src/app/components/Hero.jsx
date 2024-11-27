@@ -1,4 +1,4 @@
-// components/Hero.js
+import React from 'react';
 const Hero = () => {
   return (
     <section className="bg-green-200 text-center py-20">

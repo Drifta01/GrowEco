@@ -1,4 +1,4 @@
-import Image from "next/image"
+
 import styles from "./page.module.css"
 
 export default function Home() {
@@ -6,18 +6,8 @@ export default function Home() {
     <div>
       <head>
         <title>GrowEco - Garden and Vegetable Beds</title>
-        <script src="https://cdn.tailwindcss.com"></script>
-        <link
-          href="https://fonts.googleapis.com/css2?family=Times+New+Roman:wght@700&display=swap"
-          rel="stylesheet"
-        />
-        <style>
-          {`
-            .custom-font {
-              font-family: 'Times New Roman', serif;
-            }
-          `}
-        </style>
+  
+   
       </head>
       <body className="bg-gray-100">
         {/* Header */}
@@ -70,11 +60,7 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
             {/* Product 1 */}
             <div className="bg-white p-6 rounded-lg shadow-lg">
-              <img
-                src="https://storage.googleapis.com/a1aa/image/pmaMHXZPqnagNZqRXneROa4cVqUIeLJ3JYaNc4oBjHi7RJ1TA.jpg"
-                alt="Wooden garden bed"
-                className="w-full h-48 object-cover rounded-t-lg"
-              />
+      
               <h4 className="text-2xl font-bold custom-font mt-4">Wooden Garden Bed</h4>
               <p className="mt-2">High-quality wooden garden bed perfect for growing vegetables and flowers.</p>
               <p className="mt-4 text-green-700 font-bold">$99.99</p>
@@ -82,11 +68,7 @@ export default function Home() {
             </div>
             {/* Product 2 */}
             <div className="bg-white p-6 rounded-lg shadow-lg">
-              <img
-                src="https://storage.googleapis.com/a1aa/image/STQnu6bHjnrMAdOYNRF2veJPK7TxnwktbwgDHA0Myfy5RJ1TA.jpg"
-                alt="Metal garden bed"
-                className="w-full h-48 object-cover rounded-t-lg"
-              />
+       
               <h4 className="text-2xl font-bold custom-font mt-4">Metal Garden Bed</h4>
               <p className="mt-2">Durable metal garden bed designed for long-lasting use.</p>
               <p className="mt-4 text-green-700 font-bold">$129.99</p>
@@ -94,11 +76,7 @@ export default function Home() {
             </div>
             {/* Product 3 */}
             <div className="bg-white p-6 rounded-lg shadow-lg">
-              <img
-                src="https://storage.googleapis.com/a1aa/image/MJVbySE12p5lGBChExoBlfN8F3GJ8XfyOsDihhvfKel0HlUPB.jpg"
-                alt="Raised garden bed"
-                className="w-full h-48 object-cover rounded-t-lg"
-              />
+       
               <h4 className="text-2xl font-bold custom-font mt-4">Raised Garden Bed</h4>
               <p className="mt-2">Elevated garden bed for easy access and better soil drainage.</p>
               <p className="mt-4 text-green-700 font-bold">$149.99</p>
