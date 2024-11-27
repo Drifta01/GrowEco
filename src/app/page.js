@@ -1,15 +1,14 @@
 
-import styles from "./page.module.css"
+
 
 export default function Home() {
   return (
     <div>
-      <head>
-        <title>GrowEco - Garden and Vegetable Beds</title>
+  
   
    
-      </head>
-      <body className="bg-gray-100">
+     
+  
         {/* Header */}
         <header className="bg-green-700 text-white p-4">
           <div className="container mx-auto flex justify-between items-center">
@@ -90,7 +89,7 @@ export default function Home() {
             <p>© 2023 GrowEco. All rights reserved.</p>
           </div>
         </footer>
-      </body>
+    
     </div>
   )
 }
