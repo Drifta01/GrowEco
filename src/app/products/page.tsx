@@ -1,16 +1,20 @@
 import React from "react";
-import { Hero } from "@/components/Hero";
 import { ProductCard } from "@/components/ProductCard";
 import { productData } from "@/mock-data/data";
 
-export default async function Home() {
+
+const Products = async () => {
+  // await for  1 second
   await new Promise((resolve) => setTimeout(resolve, 1000));
 
   return (
-    <div>
-      <Hero />
+    <section className="container mx-auto py-20">
+      <h3 className="text-4xl font-bold text-center mb-10">Our Products</h3>
       <ProductCard products={productData} />
-      
-    </div>
+    </section>
   );
-}
+
+
+};
+
+export default Products;
