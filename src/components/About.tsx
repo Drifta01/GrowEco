@@ -1,12 +1,20 @@
-import Link from "next/link";
 import React from "react";
 
-export const About = () => {
+const aboutPage = async () => {
   return (
-    <div>
-      <h1>About</h1>
-      <p>Learn more about our company.</p>
-      <Link href="/products">Products</Link>
-    </div>
+    <section className="container mx-auto py-20">
+      <h1 className="text-3xl font-bold mb-4">About Us</h1>
+      <p className="text-lg mb-4">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit
+      </p>
+      <p className="text-lg mb-4">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit
+      </p>
+      <p className="text-lg mb-4">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit
+      </p>
+    </section>
   );
 };
+
+export default aboutPage;

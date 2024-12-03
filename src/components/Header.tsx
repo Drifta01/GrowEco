@@ -18,7 +18,7 @@ const Header = () => {
               </Link>
             </li>
             <li>
-              <Link className="hover:underline" href="#">
+              <Link className="hover:underline" href="/about">
                 About
               </Link>
             </li>
@@ -28,7 +28,7 @@ const Header = () => {
               </Link>
             </li>
             <li>
-              <Link className="hover:underline" href="/cart">
+              <Link className="hover:underline" href="/">
                 Cart
               </Link>
             </li>

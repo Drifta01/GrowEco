@@ -1,11 +1,5 @@
 import { Button } from "./Button";
-
-type Product = {
-  name: string;
-  description: string;
-  price: number;
-  image: string;
-};
+import { Product } from "@/types";
 
 export const ProductCard = ({ products }: { products: Product[] }) => {
   return (
