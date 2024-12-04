@@ -1,31 +1,53 @@
 export const productData = [
   {
     id: 1,
-    item: "",
-    name: "Wooden Garden Bed",
-    description:
-      "High-quality wooden garden bed perfect for growing vegetables and flowers.",
-    price: 99.99,
-    image:
-      "https://storage.googleapis.com/a1aa/image/pmaMHXZPqnagNZqRXneROa4cVqUIeLJ3JYaNc4oBjHi7RJ1TA.jpg",
+
+    item: "item1",
+
+    name: "Product 1",
+
+    description: "Description 1",
+
+    price: 100,
+
+    image: "image1.jpg",
+
+    contacts: "contact1",
+
+    about: "about1",
+
+    cart: "cart1",
+
+    email: "email1@example.com",
+
+    phone: "123-456-7890",
+
+    address: "Address 1",
   },
+
   {
     id: 2,
-    item: "",
-    name: "Metal Garden Bed",
-    description: "Durable metal garden bed designed for long-lasting use.",
-    price: 129.99,
-    image:
-      "https://storage.googleapis.com/a1aa/image/STQnu6bHjnrMAdOYNRF2veJPK7TxnwktbwgDHA0Myfy5RJ1TA.jpg",
-  },
-  {
-    id: 3,
-    item: "",
-    name: "Raised Garden Bed",
-    description:
-      "Elevated garden bed for easy access and better soil drainage.",
-    price: 149.99,
-    image:
-      "https://storage.googleapis.com/a1aa/image/MJVbySE12p5lGBChExoBlfN8F3GJ8XfyOsDihhvfKel0HlUPB.jpg",
+
+    item: "item2",
+
+    name: "Product 2",
+
+    description: "Description 2",
+
+    price: 200,
+
+    image: "image2.jpg",
+
+    contacts: "contact2",
+
+    about: "about2",
+
+    cart: "cart2",
+
+    email: "email2@example.com",
+
+    phone: "098-765-4321",
+
+    address: "Address 2",
   },
 ];

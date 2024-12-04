@@ -28,7 +28,7 @@ const Header = () => {
               </Link>
             </li>
             <li>
-              <Link className="hover:underline" href="/">
+              <Link className="hover:underline" href="/cart">
                 Cart
               </Link>
             </li>

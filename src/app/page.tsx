@@ -1,6 +1,6 @@
 import React from "react";
-import { Hero } from "@/components/Hero";
-import { ProductCard } from "@/components/ProductCard";
+import { Hero } from "@/components/products/Hero";
+import { ProductCard } from "@/components/products/ProductCard";
 import { productData } from "@/mock-data/data";
 
 export default async function Home() {
@@ -9,8 +9,6 @@ export default async function Home() {
   return (
     <div>
       <Hero />
-      <ProductCard products={productData} />
-      
     </div>
   );
 }

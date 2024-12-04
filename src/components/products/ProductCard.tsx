@@ -1,5 +1,6 @@
+import React from "react";
 import { Button } from "./Button";
-import { Product } from "@/types";
+import { Product } from "../../mock-data/types";
 
 export const ProductCard = ({ products }: { products: Product[] }) => {
   return (

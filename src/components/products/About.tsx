@@ -1,6 +1,6 @@
 import React from "react";
 
-const aboutPage = async () => {
+export const About = async () => {
   return (
     <section className="container mx-auto py-20">
       <h1 className="text-3xl font-bold mb-4">About Us</h1>
@@ -16,5 +16,3 @@ const aboutPage = async () => {
     </section>
   );
 };
-
-export default aboutPage;
