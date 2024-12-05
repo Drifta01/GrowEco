@@ -1,6 +1,5 @@
 import React from "react";
-import { ProductCard } from "@/components/products/ProductCard";
-import { productData } from "@/mock-data/data";
+
 import { Product } from "../../mock-data/types";
 
 export const Contact = ({ contact }: { contact: Product[] }) => {

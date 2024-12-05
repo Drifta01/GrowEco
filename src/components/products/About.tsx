@@ -1,18 +1,22 @@
 import React from "react";
+import { Product } from "@/mock-data/types";
 
-export const About = async () => {
+export const About = ({ about }: { about: Product[] }) => {
   return (
-    <section className="container mx-auto py-20">
-      <h1 className="text-3xl font-bold mb-4">About Us</h1>
-      <p className="text-lg mb-4">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit
-      </p>
-      <p className="text-lg mb-4">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit
-      </p>
-      <p className="text-lg mb-4">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit
-      </p>
-    </section>
+    <>
+      {about.map((about: Product) => (
+        <div key={about.id} className="mb-4"></div>
+      ))}
+      <div className="bg-white p-6 rounded-lg shadow-lg shadow-slate-500 m-5">
+        <h2 className="text-3xl font-bold mb-4">About Us</h2>
+
+        <p className="mt-2">{about[0].description}</p>
+      </div>
+
+      <div className="bg-white p-6 rounded-lg shadow-lg shadow-slate-500 m-5">
+        <h2 className="text-3xl font-bold mb-4">Our Mission</h2>
+        <p className="mt-2">{about[0].description}</p>
+      </div>
+    </>
   );
 };

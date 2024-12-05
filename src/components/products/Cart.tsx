@@ -1,9 +1,9 @@
 import { Product } from "../../mock-data/types";
 
-export const Cart = ({ items }: { items: Product[] }) => {
+export const Cart = ({ cart }: { cart: Product[] }) => {
   return (
     <>
-      {items?.map((item) => (
+      {cart?.map((item) => (
         <div key={item.name} className="bg-white p-6 shadow-slate-500 m-5">
           <h4 className="text-2xl font-bold custom-font">{item.name}</h4>
 

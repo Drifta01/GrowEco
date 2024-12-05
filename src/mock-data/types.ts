@@ -12,4 +12,5 @@ export type Product = {
   image: string;
   item: string;
   contacts: string;
+  about: string;
 };
