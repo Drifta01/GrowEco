@@ -7,16 +7,21 @@ export const About = ({ about }: { about: Product[] }) => {
       {about.map((about: Product) => (
         <div key={about.id} className="mb-4"></div>
       ))}
-      <div className="bg-white p-6 rounded-lg shadow-lg shadow-slate-500 m-5">
-        <h2 className="text-3xl font-bold mb-4">About Us</h2>
-
-        <p className="mt-2">{about[0].description}</p>
-      </div>
-
-      <div className="bg-white p-6 rounded-lg shadow-lg shadow-slate-500 m-5">
-        <h2 className="text-3xl font-bold mb-4">Our Mission</h2>
-        <p className="mt-2">{about[0].description}</p>
-      </div>
+      <p className="text-2xl font-bold text-green-700">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Est aut, sit
+        ipsum ab provident ea? Possimus saepe voluptatibus officia quam quidem
+        nostrum sapiente facilis eligendi, ratione commodi libero inventore
+        ipsum!
+      </p>
+      <p className="text-2xl font-bold text-green-700">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Est aut, sit
+        ipsum ab provident ea?
+      </p>
+      <img
+        src="https://storage.googleapis.com/a1aa/image/pmaMHXZPqnagNZqRXneROa4cVqUIeLJ3JYaNc4oBjHi7RJ1TA.jpg"
+        alt="Wooden garden bed"
+        className="object-cover w-full h-64 rounded-t-lg"
+      />
     </>
   );
 };

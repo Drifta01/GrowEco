@@ -10,6 +10,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@next/font": "^14.2.15",
     "@vercel/flags": "^2.6.3",
     "babel-plugin-react-compiler": "19.0.0-beta-df7b47d-20241124",
     "compiler": "^0.1.2",

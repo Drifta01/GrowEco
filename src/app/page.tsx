@@ -8,8 +8,8 @@ export default async function Home() {
 
   return (
     <div>
-      <Hero />
       <ProductCard products={productData} />
+      <Hero />
     </div>
   );
 }

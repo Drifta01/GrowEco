@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export const Hero = () => {
   return (
-    <section className="bg-green-200 text-center py-20">
+    <section className="bg-green-200 text-center py-5">
       <h2 className="text-5xl font-bold custom-font text-green-700">
         Grow Your Own Food
       </h2>
