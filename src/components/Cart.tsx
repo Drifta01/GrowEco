@@ -2,10 +2,12 @@ import React from "react";
 import Link from "next/link";
 import img from "next/image";
 import { Product } from "@/mock-data/types";
+import Hero from "@/components/Hero";
 
 export const Cart = ({ cart }: { cart: Product[] }) => {
   return (
     <>
+    <Hero />
       <section className="container grid-flow-col grid-cols-3 my-1 pl-20">
         <h1 className="text-6xl text-center font-bold mb-6">Cart</h1>
         {cart.map((item) => (

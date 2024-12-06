@@ -1,18 +1,16 @@
 import React from "react";
-
-import { productData } from "@/mock-data/data";
-import { Cart } from "@/components/Cart";
+import Hero from "@/components/Hero";
 
 const Page = async () => {
-  const cartData = productData; // Define cartData
-
-  await new Promise((resolve) => setTimeout(resolve, 1000));
   return (
-    <div>
-      <section className="container  grid-flow-col  grid-cols-3 my-1 pl-20  ">
-        <Cart cart={cartData} />
+    <>
+      <Hero />
+      <section className="container mx-auto py-20 object-cover">
+        <div className="max-w-7xl mx-auto p-4 sm:p-6 lg"></div>
+
+        <h3 className="text-4xl font-bold text-start mb-10">cart</h3>
       </section>
-    </div>
+    </>
   );
 };
 export default Page;

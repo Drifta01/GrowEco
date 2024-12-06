@@ -1,4 +1,4 @@
-export const productData = [
+const productData = [
   {
     id: 1,
 
@@ -53,3 +53,4 @@ export const productData = [
     address: "Address 2",
   },
 ];
+export default productData;

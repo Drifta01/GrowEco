@@ -1,12 +1,15 @@
-import React from "react";
-import { Product } from "@/mock-data/types";
-import img from "next/image";
 
-export const About = ({ about }: { about: Product[] }) => {
+import React from "react";
+import image from "next/image";
+import Hero from "@/components/Hero";
+
+const About = ({ about }: { about:[] }) => {
   return (
     <>
-      {about.map((about: Product) => (
-        <div key={about.id} className="mb-4"></div>
+    <Hero />
+    <section className="text-gray-600 body-font">
+      {about.map((about) => (
+        <div key={about} className="mb-4"></div>
       ))}
       <p className="text-2xl font-bold text-green-700">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Est aut, sit
@@ -25,6 +28,9 @@ export const About = ({ about }: { about: Product[] }) => {
         width={700}
         height={475}
       />
+
+  </section>
     </>
   );
 };
+export default About;
