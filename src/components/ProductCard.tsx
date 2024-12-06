@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 import { Product } from "../mock-data/types";
 
@@ -14,6 +15,9 @@ export const Products = ({ products }: { products: Product[] }) => {
             src={product.image}
             alt={product.name}
             className="object-cover w-full h-64 rounded-t-lg"
+
+            width={400}
+            height={400}
           />
 
           <button

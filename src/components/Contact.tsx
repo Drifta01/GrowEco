@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import img from "next/image";
 
 export const Contact = () => {
   return (
@@ -9,9 +10,14 @@ export const Contact = () => {
           <label
             className="block text-gray-700 text-sm font-bold mb-2"
             htmlFor="name"
-          >
-            Name
-          </label>
+          ></label>
+          <div>
+            <img
+              src="https://img.icons8.com/ios/50/000000/name.png"
+              alt="name"
+            />
+          </div>
+
           <input
             className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
             id="name"

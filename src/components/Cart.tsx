@@ -1,6 +1,7 @@
 import React from "react";
 import { Product } from "@/mock-data/types";
 import Link from "next/link";
+import img from "next/image";
 
 export const Cart = ({ cart }: { cart: Product[] }) => {
   return (
@@ -18,7 +19,10 @@ export const Cart = ({ cart }: { cart: Product[] }) => {
                   src={item.image}
                   alt={item.name}
                   className="flex-auto object-contain w-60 h-60 rounded-lg"
-                />
+                  width={200}
+                  height={200}
+
+                 />
               </div>
             </div>
           ))}

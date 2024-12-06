@@ -1,5 +1,6 @@
 import React from "react";
 import { Product } from "@/mock-data/types";
+import img from "next/image";
 
 export const About = ({ about }: { about: Product[] }) => {
   return (
@@ -21,6 +22,8 @@ export const About = ({ about }: { about: Product[] }) => {
         src="https://storage.googleapis.com/a1aa/image/pmaMHXZPqnagNZqRXneROa4cVqUIeLJ3JYaNc4oBjHi7RJ1TA.jpg"
         alt="Wooden garden bed"
         className="object-cover w-full h-64 rounded-t-lg"
+        width={700}
+        height={475}
       />
     </>
   );
