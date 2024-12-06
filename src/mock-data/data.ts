@@ -10,7 +10,8 @@ export const productData = [
 
     price: 100,
 
-    image: "image1.jpg",
+    image:
+      "https://storage.googleapis.com/a1aa/image/pmaMHXZPqnagNZqRXneROa4cVqUIeLJ3JYaNc4oBjHi7RJ1TA.jpg",
 
     contacts: "contact1",
 
@@ -36,7 +37,8 @@ export const productData = [
 
     price: 200,
 
-    image: "image2.jpg",
+    image:
+      "https://storage.googleapis.com/a1aa/image/pmaMHXZPqnagNZqRXneROa4cVqUIeLJ3JYaNc4oBjHi7RJ1TA.jpg",
 
     contacts: "contact2",
 

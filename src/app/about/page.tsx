@@ -1,7 +1,7 @@
 import React from "react";
 
 import { productData } from "@/mock-data/data";
-import { About } from "../../components/products/About";
+import { About } from "../../components/About";
 
 const Page = async () => {
   // await for  1 second

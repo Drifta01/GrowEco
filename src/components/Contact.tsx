@@ -1,10 +1,9 @@
 import React from "react";
-import Link  from "next/link";
+import Link from "next/link";
 
 export const Contact = () => {
   return (
     <div className="container mx-auto p-6">
-      <h1 className="text-4xl font-bold mb-6">Contact Us</h1>
       <form className="bg-white p-6 rounded-lg shadow-lg shadow-slate-500">
         <div className="mb-4">
           <label

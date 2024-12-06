@@ -1,7 +1,7 @@
 import React from "react";
-import { ProductCard } from "@/components/products/ProductCard";
+
 import { productData } from "@/mock-data/data";
-import { Hero } from "@/components/products/Hero";
+import { Products } from "@/components/ProductCard";
 
 const Page = async () => {
   // await for  1 second
@@ -9,24 +9,21 @@ const Page = async () => {
 
   return (
     <>
-    <section className="container mx-auto py-20 object-cover">
-
-      <div className="flex-auto">
-
-          <h2 className="text-3xl font-sans mt-0 text-center text-green-700">Our Products</h2>
+      <section className="container mx-auto py-20 object-cover">
+        <div>
+          <h2 className="text-3xl font-sans mt-0 text-center text-green-700">
+            Our Products
+          </h2>
           <p className="mt-2"></p>
         </div>
-
-      <ProductCard products={productData} />
-
-
-
-    </section>
-
+        <div className="grid grid-cols-3 gap-4">
+          <Products
+            products={productData.filter((product) => product !== undefined)}
+          />
+        </div>
+      </section>
     </>
-      );
+  );
 };
-
-
 
 export default Page;
