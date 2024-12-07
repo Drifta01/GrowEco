@@ -1,6 +1,6 @@
 const productData = [
   {
-    id: 1,
+    id: "1",
 
     item: "item1",
 
@@ -8,7 +8,7 @@ const productData = [
 
     description: "Description 1",
 
-    price: 100,
+    price: 10000,
 
     image:
       "https://storage.googleapis.com/a1aa/image/pmaMHXZPqnagNZqRXneROa4cVqUIeLJ3JYaNc4oBjHi7RJ1TA.jpg",
@@ -24,10 +24,12 @@ const productData = [
     phone: "123-456-7890",
 
     address: "Address 1",
+
+    date: Date().toString(),
   },
 
   {
-    id: 2,
+    id: "2",
 
     item: "item2",
 
@@ -51,6 +53,11 @@ const productData = [
     phone: "098-765-4321",
 
     address: "Address 2",
+
+    date: Date().toString(),
   },
 ];
+
+// other
+
 export default productData;

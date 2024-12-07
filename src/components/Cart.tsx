@@ -1,35 +1,18 @@
+"use client";
+
 import React from "react";
 import Link from "next/link";
-import img from "next/image";
-import { Product } from "@/mock-data/types";
-import Hero from "@/components/Hero";
 
-export const Cart = ({ cart }: { cart: Product[] }) => {
+import { Product } from "@/mock-data/types";
+
+export const Cart = ({ products }: { products: Product[] }) => {
   return (
     <>
-    <Hero />
-      <section className="container grid-flow-col grid-cols-3 my-1 pl-20">
-        <h1 className="text-6xl text-center font-bold mb-6">Cart</h1>
-        {cart.map((item) => (
-          <div key={item.id} className="bg-white p-6 shadow-slate-">
-            <h4 className="text-2xl font-bold custom-font"> </h4>
-            <div>
-              <p className="text-lg font-bold">Price:</p>
-              <p className="text-lg font-bold">${item.price}</p>
-              <img
-                src={item.image}
-                alt={item.name}
-                className="flex-auto object-contain w-60 h-60 rounded-lg"
-                width={200}
-                height={200}
-              />
-            </div>
-          </div>
-        ))}
+      <section className="container mx-auto py-20 object-cover">
         <div>
           <p className="text-lg font-bold">Total:</p>
           <p className="text-lg font-bold">
-            ${cart.reduce((acc, item) => acc + item.price, 0)}
+            ${products.reduce((acc, item) => acc + item.price, 0)}
           </p>
         </div>
 

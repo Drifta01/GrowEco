@@ -1,20 +1,20 @@
 import React from "react";
-import Hero from "@/components/Hero";
 
+import AboutComponent from "@/components/About";
+
+import "next/types";
 import productData from "@/mock-data/data";
-import Link from "next/link";
 
-const Page = async () => {
+const about = productData;
 
-
+const About = async () => {
   return (
     <>
-    <Hero />
-    <section className="container mx-auto py-20">
-      <h3 className="text-4xl font-bold text-start mb-10">About Us</h3>
-</section>
-</>
-
+      <section className="container mx-auto py-20 object-cover">
+        <AboutComponent />
+      </section>
+    </>
   );
 };
-export default Page;
+
+export default About;
