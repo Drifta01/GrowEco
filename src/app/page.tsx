@@ -1,15 +1,23 @@
 import React from "react";
-import { Hero } from "@/components/products/Hero";
-import { ProductCard } from "@/components/products/ProductCard";
-import { productData } from "@/mock-data/data";
+import { Hero } from "@/components/Hero";
 
-export default async function Home() {
-  await new Promise((resolve) => setTimeout(resolve, 1000));
+import Link from "next/link";
 
+const Page = () => {
   return (
-    <div>
+    <>
       <Hero />
-      <ProductCard products={productData} />
-    </div>
+      <section className="container py-20 object-cover">
+        <div className="max-w-7xl mx-auto p-4 sm:p-6 lg:p-8"></div>
+        <Link href="/product"></Link>
+        <img
+          src="https://storage.googleapis.com/a1aa/image/pmaMHXZPqnagNZqRXneROa4cVqUIeLJ3JYaNc4oBjHi7RJ1TA.jpg"
+          className="flex-auto object-contain w-60 h-60 rounded-lg"
+          width={200}
+          height={200}
+        />
+      </section>
+    </>
   );
-}
+};
+export default Page;
