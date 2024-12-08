@@ -1,9 +1,8 @@
 import React from "react";
 
 import Cart from "@/components/Cart";
-import productData from "@/mock-data/data";
 
-const CartPage = async () => {
+const Page = async () => {
   return (
     <>
       <section className="container mx-auto py-20 object-cover">
@@ -12,4 +11,4 @@ const CartPage = async () => {
     </>
   );
 };
-export default CartPage;
+export default Page;

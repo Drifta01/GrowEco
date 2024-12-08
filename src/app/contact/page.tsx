@@ -1,8 +1,7 @@
 import React from "react";
-
 import Contact from "@/components/Contact";
 
-const ContactPage = async () => {
+const Page = async () => {
   return (
     <>
       <section className="container mx-auto py-20 object-cover">
@@ -11,4 +10,4 @@ const ContactPage = async () => {
     </>
   );
 };
-export default ContactPage;
+export default Page;

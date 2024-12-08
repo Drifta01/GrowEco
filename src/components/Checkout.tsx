@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
 
-import  ProductData from "@/mock-data/data";
+import ProductData from "@/mock-data/data";
 
 const cartStorage = localStorage.getItem("cart");
 const Cart = cartStorage ? JSON.parse(cartStorage) : [];

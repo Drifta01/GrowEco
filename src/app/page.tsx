@@ -8,6 +8,7 @@ import Link from "next/link";
 const Page = () => {
   return (
     <>
+    
       <Hero />
 
       <section className="container py-20 object-cover">

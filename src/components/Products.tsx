@@ -1,17 +1,15 @@
 "use client";
-import React, { useState } from "react";
+import React from "react";
 import { Product } from "@/mock-data/types";
 import Button from "./forms/Button";
 
 import { CartItem, useCart } from "@/context/cartContext";
 
-const Products = ({ products }: { products: Product[] }) => {
-  const { state, dispatch } = useCart();
+const Products = ({ product }: { product: Product[] }) => {
+  const { dispatch } = useCart();
 
   const addItemToCart = (product: Product) => {
     const payload: CartItem = {
-      id: "1",
-
       quantity: 1,
       product,
     };
@@ -20,7 +18,7 @@ const Products = ({ products }: { products: Product[] }) => {
 
   return (
     <div className="flex">
-      {products.map((product) => (
+      {product.map((product) => (
         <div
           key={product.id}
           className="p-4 m-2 border rounded shadow max-w-72 flex gap-4 flex-col "

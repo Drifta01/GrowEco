@@ -10,7 +10,7 @@ const Cart = () => {
   const removeItemFromCart = (product: Product) => {
     dispatch({
       type: "REMOVE_ITEM",
-      payload: { id: product.id, product, quantity: 0 },
+      payload: { product, quantity: 0 },
     });
   };
 
@@ -26,7 +26,13 @@ const Cart = () => {
       <ul>
         {state.items.map((item) => (
           <li key={item.product.id}>
-            {item.product.name} - ${item.product.price} x {item.quantity}
+            {item.product.name} <div></div>
+            <div>
+              ${item.product.price}
+              <div className="border-black  pr-24 font-bold w-12">
+                Quantity: {item.quantity}
+              </div>
+            </div>
             <button onClick={() => removeItemFromCart(item.product)}>
               Remove
             </button>
@@ -36,5 +42,4 @@ const Cart = () => {
     </div>
   );
 };
-
 export default Cart;

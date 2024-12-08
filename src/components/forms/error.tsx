@@ -1,8 +1,8 @@
-
-
-export const error = async (err: any) => {
-  console.error(err);
-  return {
-    props: {error: err.message},
-  };
-};
+export default function Error({ Error }: { Error: string }) {
+  return (
+    <div>
+      <h1>Error</h1>
+      <p>{Error}</p>
+    </div>
+  );
+}
