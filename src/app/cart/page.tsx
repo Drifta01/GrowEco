@@ -2,7 +2,6 @@ import React from "react";
 
 import Cart from "@/components/Cart";
 import productData from "@/mock-data/data";
-import CartContents from "@/components/CartContents";
 
 const CartPage = async () => {
   return (

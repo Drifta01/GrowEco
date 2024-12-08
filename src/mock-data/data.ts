@@ -60,6 +60,4 @@ const productData = [
   },
 ];
 
-// other
-
 export default productData;

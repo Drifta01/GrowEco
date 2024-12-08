@@ -1,24 +1,16 @@
 "use client";
+import React from "react";
 
 import { CartItem, useCart } from "@/context/cartContext";
+import { Product } from "@/mock-data/types";
 
 const Cart = () => {
   const { state, dispatch } = useCart();
 
-  const addItemToCart = () => {
-    const newItem: CartItem = {
-      id: "1",
-      name: "Sample Item",
-      price: 10,
-      quantity: 1,
-    };
-    dispatch({ type: "ADD_ITEM", payload: newItem });
-  };
-
-  const removeItemFromCart = (id: string) => {
+  const removeItemFromCart = (product: Product) => {
     dispatch({
       type: "REMOVE_ITEM",
-      payload: { id, name: "", price: 0, quantity: 0 },
+      payload: { id: product.id, product, quantity: 0 },
     });
   };
 
@@ -29,13 +21,15 @@ const Cart = () => {
   return (
     <div>
       <h1>Cart</h1>
-      <button onClick={addItemToCart}>Add Item</button>
+
       <button onClick={clearCart}>Clear Cart</button>
       <ul>
         {state.items.map((item) => (
-          <li key={item.id}>
-            {item.name} - ${item.price} x {item.quantity}
-            <button onClick={() => removeItemFromCart(item.id)}>Remove</button>
+          <li key={item.product.id}>
+            {item.product.name} - ${item.product.price} x {item.quantity}
+            <button onClick={() => removeItemFromCart(item.product)}>
+              Remove
+            </button>
           </li>
         ))}
       </ul>

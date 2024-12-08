@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import { Product } from "@/mock-data/types";
-import Button from "./Button";
+import Button from "./forms/Button";
 
 import { CartItem, useCart } from "@/context/cartContext";
 

@@ -2,18 +2,19 @@
 import { Product } from "@/mock-data/types";
 import React, { createContext, useContext, useReducer, ReactNode } from "react";
 
-export interface CartItem {
+export type CartItem = {
+
   id: string;
 
   quantity: number;
   product: Product;
 }
 
-interface CartState {
+export type CartState = {
   items: CartItem[];
 }
 
-interface CartAction {
+export type CartAction = {
   type: "ADD_ITEM" | "REMOVE_ITEM" | "CLEAR_CART";
   payload?: CartItem;
 }
@@ -78,4 +79,4 @@ const useCart = () => {
   return context;
 };
 
-export { CartProvider, useCart };
+export { CartProvider, useCart, CartContext, cartReducer };

@@ -11,4 +11,3 @@ export type Product = {
   item: string;
   contacts: string;
 };
-

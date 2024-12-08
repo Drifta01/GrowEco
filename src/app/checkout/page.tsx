@@ -1,15 +1,13 @@
+"use client";
 import React from "react";
 
-import About from "@/components/About";
-
-const aboutPage = async () => {
+const Checkout = async () => {
   return (
     <>
       <section className="container mx-auto py-20 object-cover">
-        <About />
+        <Checkout />
       </section>
     </>
   );
 };
-
-export default aboutPage;
+export default Checkout;
