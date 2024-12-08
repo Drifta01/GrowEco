@@ -1,20 +1,15 @@
 import React from "react";
 
-import AboutComponent from "@/components/About";
+import About from "@/components/About";
 
-import "next/types";
-import productData from "@/mock-data/data";
-
-const about = productData;
-
-const About = async () => {
+const about = async () => {
   return (
     <>
       <section className="container mx-auto py-20 object-cover">
-        <AboutComponent />
+        <About />
       </section>
     </>
   );
 };
 
-export default About;
+export default about;

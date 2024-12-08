@@ -25,7 +25,7 @@ const productData = [
 
     address: "Address 1",
 
-    date: Date().toString(),
+    date: "Date 1",
   },
 
   {
@@ -54,7 +54,9 @@ const productData = [
 
     address: "Address 2",
 
-    date: Date().toString(),
+    date: "Date 2",
+
+    cartItem: {},
   },
 ];
 

@@ -2,10 +2,10 @@ import React from "react";
 
 import Hero from "@/components/Hero";
 
-const About = () => {
+export default function About() {
   return (
     <>
-
+      <Hero />
       <section className="container mx-auto py-20 object-cover">
         <div
           className="container mx-auto p-4 pt-6 md:p-6 lg:p
@@ -34,5 +34,4 @@ const About = () => {
       </section>
     </>
   );
-};
-export default About;
+}

@@ -1,21 +1,23 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import { Product } from "@/mock-data/types";
 import Button from "./Button";
-import { CartItem, useCart } from "@/hooks/use-cart";
+
+import { CartItem, useCart } from "@/context/cartContext";
 
 const Products = ({ products }: { products: Product[] }) => {
-  const { setCart, addItem } = useCart();
-  const addToCart = (product: Product) => {
-    const item: CartItem = {
-      id: product.id,
-      product,
-      quantity: 1,
-      date: ""
-    };
+  const { state, dispatch } = useCart();
 
-    addItem(item);
+  const addItemToCart = (product: Product) => {
+    const payload: CartItem = {
+      id: "1",
+
+      quantity: 1,
+      product,
+    };
+    dispatch({ type: "ADD_ITEM", payload });
   };
+
   return (
     <div className="flex">
       {products.map((product) => (
@@ -27,7 +29,8 @@ const Products = ({ products }: { products: Product[] }) => {
           <img src={product.image} alt={product.name} />
           <p>{product.description}</p>
           <p className="text-lg font-semibold">${product.price}</p>
-          <Button onClick={() => addToCart(product)} href="#">
+
+          <Button onClick={() => addItemToCart(product)} href="#">
             Add To Cart
           </Button>
         </div>

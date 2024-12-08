@@ -1,6 +1,7 @@
 import "../globals.css";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
+import { CartProvider } from "@/context/cartContext";
 import React from "react";
 
 const metadata = {
@@ -17,8 +18,10 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <Header />
+        <CartProvider>
 
         <div>{children}</div>
+        </CartProvider>
 
         <Footer />
       </body>
