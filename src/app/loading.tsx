@@ -1,9 +1,7 @@
-export const Loading = () => {
+export default function Loading() {
   return (
-    <div className="container mx-auto py-20">
-      <h3 className="text-4xl font-bold text-center mb-10">Loading...</h3>
+    <div className="flex items-center justify-center h-screen">
+      <div className="animate-spin rounded-full h-12 w-12 border-t-10 border-b-4 border-green-600"></div>
     </div>
   );
-};
-
-export default Loading;
+}
