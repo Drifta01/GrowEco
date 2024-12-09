@@ -5,6 +5,7 @@ const Footer = () => {
       <div className="container mx-auto text-center">
         <p>© 2023 GrowEco. All rights reserved.</p>
       </div>
+      <div className="container mx-auto text-center"></div>
     </footer>
   );
 };

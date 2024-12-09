@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
 
-const Button = ({
+export const Button = ({
   variant = "primary",
   size = "md",
   children,
@@ -31,4 +31,3 @@ const Button = ({
     </Link>
   );
 };
-export default Button;

@@ -1,15 +1,20 @@
 import React from "react";
 
 import Hero from "@/components/Hero";
+import About from "../about/page";
+
 
 const Page = async () => {
   return (
-    <section className="container mx-auto py-20 object-cover">
+    <span className="container mx-auto py-20 object-cover">
       <Hero />
       <div
         className="container mx-auto p-4 pt-6 md:p-6 lg:p
       -6 xl:p-6 2xl:p-6"
       >
+
+        <About />
+
         <div
           className="flex flex-col items-center justify-center p-4 md:p-6 lg
         :p-6 xl:p-6 2xl:p-6"
@@ -30,7 +35,7 @@ const Page = async () => {
             :p-6 xl:p-6 2xl:p-6"
         ></div>
       </div>
-    </section>
+    </span>
   );
 };
 

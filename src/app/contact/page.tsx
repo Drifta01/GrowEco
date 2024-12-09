@@ -2,12 +2,11 @@ import React from "react";
 import Contact from "@/components/Contact";
 
 const Page = async () => {
+  await import("react");
   return (
-    <>
-      <section className="container mx-auto py-20 object-cover">
-        <Contact />
-      </section>
-    </>
+    <span className="container mx-auto py-20 object-cover">
+      <Contact />
+    </span>
   );
 };
 export default Page;

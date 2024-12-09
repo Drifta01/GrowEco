@@ -4,11 +4,9 @@ import Cart from "@/components/Cart";
 
 const Page = async () => {
   return (
-    <>
-      <section className="container mx-auto py-20 object-cover">
-        <Cart />
-      </section>
-    </>
+    <span className="container mx-auto py-20 object-cover">
+      <Cart />
+    </span>
   );
 };
 export default Page;
