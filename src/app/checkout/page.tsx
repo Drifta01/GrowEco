@@ -1,12 +1,11 @@
+"use client";
 import React from "react";
 
-import Cart from "@/components/Cart";
-
-const Page = async () => {
+const Checkout = async () => {
   return (
     <div className="container mx-auto py-20 object-cover">
-      <Cart />
+      <Checkout />
     </div>
   );
 };
-export default Page;
+export default Checkout;

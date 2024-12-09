@@ -1,16 +1,12 @@
-import { ReactNode } from "react";
-
 export type Product = {
-  email: ReactNode;
-  phone: ReactNode;
-  address: ReactNode;
-
-  id: number;
+  id: string;
   name: string;
   description: string;
   price: number;
   image: string;
-  item: string;
-  contacts: string;
-  about: string;
+};
+export type CartItem = {
+  product: Product;
+  quantity: number;
+  purchaseItem: (product: Product) => void;
 };

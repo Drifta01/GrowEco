@@ -1,15 +1,16 @@
 import React from "react";
-import { Hero } from "@/components/products/Hero";
-import { ProductCard } from "@/components/products/ProductCard";
-import { productData } from "@/mock-data/data";
+import { Hero } from "@/components/Hero";
 
-export default async function Home() {
-  await new Promise((resolve) => setTimeout(resolve, 1000));
+import Product from "@/components/Products";
+import productData from "@/mock-data/data";
+import Toggle from "@/components/forms/Toggle";
 
+const Page = () => {
   return (
-    <div>
+    <span className="container py-20 object-cover">
       <Hero />
-      <ProductCard products={productData} />
-    </div>
+      <Toggle />
+    </span>
   );
-}
+};
+export default Page;
