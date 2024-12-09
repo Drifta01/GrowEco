@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 
-import { CartItem, useCart } from "@/context/cartContext";
+import { useCart } from "@/context/cartContext";
 import { Product } from "@/mock-data/types";
 
 const Cart = () => {
@@ -14,31 +14,45 @@ const Cart = () => {
     });
   };
 
-  const clearCart = () => {
-    dispatch({ type: "CLEAR_CART" });
-  };
+  function purchaseItem(product: Product): void {
+    throw new Error("Function not implemented.");
+  }
+
+  function getTotalPrice(state: any): number {
+    let totalPrice = 0;
+    state.items.forEach((item: any) => {
+      totalPrice += item.product.price * item.quantity;
+    });
+    return totalPrice;
+  }
+
+  // function addItemsToCart (state: CartState): React.ReactNode {
+  //   throw new Error("Function not implemented.");
+  // }
 
   return (
-    <div>
-      <h1>Cart</h1>
+    <div className="flex justify-between">
+      <div className="container mx-auto">
+        <div className="flex justify-between"></div>
+        <ul>
+          {state.items.map((item) => (
+            <li key={item.product.id}>
+              {item.product.name}${item.product.price}
+              Quantity: {item.quantity}
+              <p className="flex justify-start text-lg font-semibold rounded-lg bg-blue-500 size-20 w-20   ">
+                <button onClick={() => removeItemFromCart(item.product)}>
+                  Remove Item
+                </button>
+              </p>
+              {/* <button onClick={() => purchaseItem(item.product)}> */}
+              {/* </button> */}
+            </li>
+          ))}
+        </ul>
 
-      <button onClick={clearCart}>Clear Cart</button>
-      <ul>
-        {state.items.map((item) => (
-          <li key={item.product.id}>
-            {item.product.name} <div></div>
-            <div>
-              ${item.product.price}
-              <div className="border-black  pr-24 font-bold w-12">
-                Quantity: {item.quantity}
-              </div>
-            </div>
-            <button onClick={() => removeItemFromCart(item.product)}>
-              Remove
-            </button>
-          </li>
-        ))}
-      </ul>
+        <p>Total: {getTotalPrice(state)}</p>
+
+      </div>
     </div>
   );
 };

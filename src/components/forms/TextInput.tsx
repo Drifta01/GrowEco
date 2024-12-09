@@ -14,6 +14,7 @@ export const TextInput = ({
   value: string;
   height: string;
 
+
   onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
 }) => {
   return (

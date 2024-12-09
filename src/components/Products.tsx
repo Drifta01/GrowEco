@@ -2,7 +2,7 @@
 import React from "react";
 import { Product } from "@/mock-data/types";
 import { CartItem, useCart } from "@/context/cartContext";
-import { Button } from "../components/forms/Button";
+
 
 const Products = ({ product }: { product: Product[] }) => {
   const { dispatch } = useCart();
@@ -27,11 +27,14 @@ const Products = ({ product }: { product: Product[] }) => {
           <p>{product.description}</p>
           <p className="text-lg font-semibold">${product.price}</p>
 
-          <Button onClick={() => addItemToCart(product)} href="/cart">
+          <button onClick={() => addItemToCart(product)}>
             Add To Cart
-          </Button>
+          </button>
         </div>
       ))}
+     <p>
+
+      </p>
     </div>
   );
 };

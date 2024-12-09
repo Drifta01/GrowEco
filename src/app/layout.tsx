@@ -18,11 +18,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <Header />
         <CartProvider>
+          <Header />
           <div>{children}</div>
+          <Footer />
         </CartProvider>
-        <Footer />
       </body>
     </html>
   );

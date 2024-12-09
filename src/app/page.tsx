@@ -9,8 +9,7 @@ const Page = () => {
   return (
     <span className="container py-20 object-cover">
       <Hero />
-<Toggle />
-      <Product product={productData} />
+      <Toggle />
     </span>
   );
 };

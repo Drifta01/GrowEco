@@ -10,10 +10,8 @@ const productData: Product[] = [
     image:
       "https://storage.googleapis.com/a1aa/image/pmaMHXZPqnagNZqRXneROa4cVqUIeLJ3JYaNc4oBjHi7RJ1TA.jpg",
   },
-
   {
     id: "2",
-
     name: "product",
     description: "Description",
     price: 200,
