@@ -1,6 +1,6 @@
 import { ReactNode } from "react";
 
-export type Product = {
+export type Games = {
   email: ReactNode;
   phone: ReactNode;
   address: ReactNode;

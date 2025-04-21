@@ -1,53 +1,35 @@
-export const productData = [
+ const gamingData = [
   {
     id: 1,
-
-    item: "item1",
-
-    name: "Product 1",
-
-    description: "Description 1",
-
-    price: 100,
-
-    image: "image1.jpg",
-
-    contacts: "contact1",
-
-    about: "about1",
-
-    cart: "cart1",
-
-    email: "email1@example.com",
-
-    phone: "123-456-7890",
-
-    address: "Address 1",
+    name: "name",
+    image:
+      "https://images.unsplash.com/photo-1677631231234-1234567890ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    maxWin: 0,
   },
 
   {
     id: 2,
-
-    item: "item2",
-
-    name: "Product 2",
-
-    description: "Description 2",
-
-    price: 200,
-
-    image: "image2.jpg",
-
-    contacts: "contact2",
-
-    about: "about2",
-
-    cart: "cart2",
-
-    email: "email2@example.com",
-
-    phone: "098-765-4321",
-
-    address: "Address 2",
+    name: "name",
+    image:
+      "https://images.unsplash.com/photo-1677631231234-1234567890ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    maxWin: 0,
   },
 ];
+ const jackpotGames = [
+  {
+    game: "name",
+
+    id: "Number",
+    name: "name",
+    imageUrl: "url-to-image",
+    currentJackpot: Number,
+    nextDraw: "date",
+    description: "string",
+  },
+  // Add more games as needed
+];
+export { gamingData, jackpotGames };
