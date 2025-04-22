@@ -1,4 +1,7 @@
-export interface JackpotGame {
+
+
+
+export interface jackpots {
   id: string;
   name: string;
   imageUrl: string;

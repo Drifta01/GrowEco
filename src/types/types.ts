@@ -1,6 +1,6 @@
 import { ReactNode } from "react";
 
-export type Games = {
+export type game = {
   email: ReactNode;
   phone: ReactNode;
   address: ReactNode;
@@ -14,3 +14,16 @@ export type Games = {
   contacts: string;
   about: string;
 };
+
+export type  description = {
+  id: number;
+  name: string;
+  description: string;
+  price: number;
+  image: string;
+  item: string;
+  contacts: string;
+  about: string;
+};
+
+

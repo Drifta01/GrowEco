@@ -1,16 +1,16 @@
-import React from "react";
-import { Hero } from "@/components/Hero";
+import { Hero } from '@/components/Hero';
+import { Header } from '@/components/Header';
+import './globals.css';
 
+export default async function Page() {
+    await new Promise(resolve => setTimeout(resolve, 1000));
 
-import { GamingCard } from "../components/GamingCard";
+    return (
+        <div>
+            <Hero />
+            <Header />
 
-export default async function Home() {
-  await new Promise((resolve) => setTimeout(resolve, 1000));
-
-  return (
-    <div>
-      <Hero />
-    <GamingCard />
-    </div>
-  );
+            <div className="flex flex-col items-center justify-center h-screen bg-gray-100"></div>
+        </div>
+    );
 }

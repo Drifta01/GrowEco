@@ -1,8 +1,14 @@
-const nextConfig: import("next").NextConfig = {
-  experimental: {
-    reactCompiler: true,
-    turbo: {},
-  },
-};
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  // images: {
+  //   domains: ['localhost'],
+  //   remotePatterns: [
+  //     {
+  //       protocol: 'https',
+  //       hostname: '**',
+  //     },
+  //   ],
+  // },
+}
 
-export default nextConfig;
+module.exports = nextConfig

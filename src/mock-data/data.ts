@@ -19,7 +19,7 @@
     maxWin: 0,
   },
 ];
- const jackpotGames = [
+ const jackpots = [
   {
     game: "name",
 
@@ -32,4 +32,4 @@
   },
   // Add more games as needed
 ];
-export { gamingData, jackpotGames };
+export { gamingData, jackpots};
