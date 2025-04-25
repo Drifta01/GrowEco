@@ -1,16 +1,24 @@
-import { Hero } from '@/components/Hero';
-import { Header } from '@/components/Header';
+
+
+
+
+import GamingCard from '@/components/pages/forms/GamingCard';
 import './globals.css';
+import { Home } from '@/components/Home';
 
 export default async function Page() {
     await new Promise(resolve => setTimeout(resolve, 1000));
 
     return (
         <div>
-            <Hero />
-            <Header />
-
-            <div className="flex flex-col items-center justify-center h-screen bg-gray-100"></div>
+          <Home />
+          
+     
+         
+   
+          
+       
+          
         </div>
     );
 }

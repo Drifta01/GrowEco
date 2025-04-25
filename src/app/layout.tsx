@@ -1,31 +1,24 @@
+import React from 'react';
+import { Header } from '@/components/Header';
+import { Footer } from '@/components/Footer';
 
-import React from "react";
-import {Header} from "@/components/Header"
-import {Footer} from "@/components/Footer"
-import {Hero} from '@/components/Hero'
-
-import "./globals.css"
- 
-
-
+import './globals.css';
+import { NavBar } from '@/components/NavBar';
 
 export default function RootLayout({
-  children,
+    children,
 }: {
-  children: React.ReactNode;
+    children: React.ReactNode;
 }) {
-  return (
-    <html lang="en">
-      <body>
-        <Header />
-        <Hero />
+    return (
+        <html lang="en">
+            <body>
+                <NavBar />
 
-      
+                <div>{children}</div>
 
-        <div>{children}</div>
-      <Footer />
-      </body>
-    </html>
-  );
-
+                <Footer />
+            </body>
+        </html>
+    );
 }
