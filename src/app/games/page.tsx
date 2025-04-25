@@ -1,78 +1,43 @@
 'use client';
 
 import React from 'react';
-
 import Image from 'next/image';
+import { Footer } from '@/components/Footer';
 
-const Games = () => {
+
+const GamesPage = () => {
+    const gameImages = [
+        { src: "/pinky.png", alt: "pinky" },
+        { src: "/2029.jpg", alt: "2029" },
+        { src: "/16352.jpg", alt: "16532" },
+        { src: "/21681.jpg", alt: "21681" },
+        { src: "/38396.jpg", alt: "38396" },
+        { src: "/luckyTwins.jpg", alt: "luckyTwins" },
+        { src: "/NestEgg.jpg", alt: "NestEgg" },
+        { src: "/49024.jpg", alt: "49024" },
+        { src: "/49010.jpg", alt: "49010" },
+        { src: "/49010.jpg", alt: "49010" },
+    ];
+
     return (
-        <div className="form-text grid-5 alpha bg-slate-600 text-white h-screen w-screen p-4">
-            <section className="grid grid-cols-3 grid-rows-3 bg-slate-500 h-full w-full ">
-                <Image
-                    className="rounded-l-md mx-auto max-h-full border-black border-[3px]"
-                    src="/pinky.png"
-                    alt="pinky"
-                    width={200}
-                    height={200}
-                />
-                <Image
-                    className="rounded-l-md mx-auto max-h-full border-black border-[3px]"
-                    src="/2029.jpg"
-                    alt="2029"
-                    width={200}
-                    height={200}
-                />
-                <Image
-                    className="rounded-l-md mx-auto max-h-full border-black border-[3px]"
-                    src="/16352.jpg"
-                    alt="16532"
-                    width={200}
-                    height={200}
-                />
-                <Image
-                    className="rounded-l-md mx-auto max-h-full border-black border-[3px]"
-                    src="/21681.jpg"
-                    alt="21681"
-                    width={200}
-                    height={200}
-                />
-                <Image
-                    className="rounded-l-md mx-auto max-h-full border-black border-[3px]"
-                    src="/38396.jpg"
-                    alt="38396"
-                    width={200}
-                    height={200}
-                />
-                <Image
-                    className="rounded-l-md mx-auto max-h-full border-black border-[3px]"
-                    src="/luckyTwins.jpg"
-                    alt="luckyTwins"
-                    width={200}
-                    height={200}
-                />
-                <Image
-                    className="rounded-l-md mx-auto max-h-full border-black border-[3px]"
-                    src="/NestEgg.jpg"
-                    alt="NestEgg"
-                    width={200}
-                    height={200}
-                />
-                <Image
-                    className="rounded-l-md mx-auto max-h-full border-black border-[3px]"
-                    src="/49024.jpg"
-                    alt="49024"
-                    width={200}
-                    height={200}
-                />
-                <Image
-                    className="rounded-l-md mx-auto max-h-full border-black border-[3px]"
-                    src="/49010.jpg"
-                    alt="49010"
-                    width={200}
-                    height={200}
-                />
+        <div className="p-4">
+            <h1 className="text-3xl font-bold mb-6 text-slate-800">Available Games</h1>
+            <section className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">
+                {gameImages.map((game, index) => (
+                    <div key={index} className="border border-gray-200 rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-200">
+                        <Image
+                            className="w-full h-auto object-cover"
+                            src={game.src}
+                            alt={game.alt}
+                            width={200}
+                            height={200}
+                        />
+                    </div>
+                ))}
             </section>
+         
         </div>
     );
 };
-export default Games;
+
+export default GamesPage;
