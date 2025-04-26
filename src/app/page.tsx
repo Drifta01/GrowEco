@@ -7,7 +7,7 @@ const recommendedCasinos = [
   {
     id: 1,
     name: 'Legzo Casino',
-    logoSrc: '/legzo-logo.png',
+    logoSrc: '/pinky.png',
     rating: 4.7,
   },
   {
