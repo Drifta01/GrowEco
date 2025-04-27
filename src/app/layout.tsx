@@ -1,6 +1,6 @@
-import React from 'react';
-import { MainLayout } from '@/components/MainLayout';
 import { Footer } from '@/components/Footer';
+import { Header } from '@/components/Header';
+import React from 'react';
 import './globals.css';
 
 export default function RootLayout({
@@ -11,10 +11,11 @@ export default function RootLayout({
     return (
         <html lang="en">
             <body className="antialiased">
-                <MainLayout>
+               <Header />
                     {children}
+                    <Footer />
             
-                </MainLayout>
+                
             </body>
         </html>
     );

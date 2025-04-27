@@ -6,44 +6,45 @@ import './globals.css';
 const recommendedCasinos = [
   {
     id: 1,
-    name: 'Legzo Casino',
-    logoSrc: '/pinky.png',
+    name: 'Wildz',
+    logoSrc: '/21681.jpg',
     rating: 4.7,
   },
   {
     id: 2,
-    name: 'Trips Casino',
-    logoSrc: '/trips-logo.png',
+    name: 'Jackpot City',
+    logoSrc: '/pinky.png',
     rating: 4.5,
   },
   {
     id: 3,
-    name: 'Glitchspin Casino',
-    logoSrc: '/glitchspin-logo.png',
+    name: 'Bcasino',
+    logoSrc: '/2029.jpg',
+    rating: 4.3,
+  },
+  {
+    id: 3,
+    name: 'Bcasino',
+    logoSrc: '/48991.jpg',
+    rating: 4.3,
+  },
+  {
+    id: 3,
+    name: 'Bcasino',
+    logoSrc: '/49002.jpg',
+    rating: 4.3,
+  },
+  {
+    id: 3,
+    name: 'Bcasino',
+    logoSrc: '/49012.jpg',
     rating: 4.3,
   },
 ];
 
-const newCasinos = [
-  {
-    id: 4,
-    name: 'Punter',
-    logoSrc: '/punter-logo.png',
-    rating: 4.2,
-  },
-  {
-    id: 5,
-    name: 'Spinoloco',
-    logoSrc: '/spinoloco-logo.png',
-    rating: 4.0,
-  },
-  {
-    id: 6,
-    name: 'Flagman',
-    logoSrc: '/flagman-logo.png',
-    rating: 3.9,
-  },
-];
+
+
+
 
 const Home = () => {
   return (
@@ -93,5 +94,5 @@ const Home = () => {
     </div>
   );
 };
-
 export default Home;
+

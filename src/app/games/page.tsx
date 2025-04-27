@@ -4,8 +4,7 @@ import React from 'react';
 import Image from 'next/image';
 import { Footer } from '@/components/Footer';
 
-
-const GamesPage = () => {
+ const Page = () => {
     const gameImages = [
         { src: "/pinky.png", alt: "pinky" },
         { src: "/2029.jpg", alt: "2029" },
@@ -39,5 +38,5 @@ const GamesPage = () => {
         </div>
     );
 };
+export default Page;    
 
-export default GamesPage;

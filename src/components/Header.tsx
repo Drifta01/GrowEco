@@ -20,7 +20,7 @@ export const Header = () => {
             <Image
               className="rounded-full"
               src="/logo.jpg"
-              alt="Logo"
+              alt="logo"
               width={100}
               height={100}
             />
@@ -42,8 +42,8 @@ export const Header = () => {
               </Link>
             </li>
             <li>
-              <Link href="/jackpots" className="hover:text-yellow-300 transition duration-200">
-                Jackpots
+              <Link href="/bonuses" className="hover:text-yellow-300 transition duration-200">
+               Bonus
               </Link>
             </li>
           </ul>

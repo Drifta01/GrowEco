@@ -1,0 +1,23 @@
+[
+    {
+        "name": "Casino A",
+        "location": "Location A",
+        "games": ["Game 1", "Game 2", "Game 3"],
+        "rating": 4.5,
+        "image": "/images/casino-a.jpg"
+    },
+    {
+        "name": "Casino B",
+        "location": "Location B",
+        "games": ["Game 4", "Game 5", "Game 6"],
+        "rating": 4.0,
+        "image": "/images/casino-b.jpg"
+    },
+    {
+        "name": "Casino C",
+        "location": "Location C",
+        "games": ["Game 7", "Game 8", "Game 9"],
+        "rating": 3.5,
+        "image": "/images/casino-c.jpg"
+    }
+]

@@ -1,0 +1,29 @@
+[
+    {
+        "id": 1,
+        "name": "Bonus 1",
+        "description": "This is the first bonus.",
+        "type": "Type A",
+        "value": 10,
+        "duration": 5,
+        "icon": "icon1.png"
+    },
+    {
+        "id": 2,
+        "name": "Bonus 2",
+        "description": "This is the second bonus.",
+        "type": "Type B",
+        "value": 20,
+        "duration": 10,
+        "icon": "icon2.png"
+    },
+    {
+        "id": 3,
+        "name": "Bonus 3",
+        "description": "This is the third bonus.",
+        "type": "Type C",
+        "value": 30,
+        "duration": 15,
+        "icon": "icon3.png"
+    }
+]

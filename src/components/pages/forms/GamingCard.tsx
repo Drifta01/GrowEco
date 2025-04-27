@@ -13,7 +13,7 @@ const GamingCard = () => {
             <Image
                 width={300}
                 height={200}
-                src="/pinky.png"
+                src="/"
                 alt="Game thumbnail"
                 className="game-thumbnail"
             />
