@@ -1,0 +1,96 @@
+[
+    {
+        "id": 1,
+        "name": "Betting",
+        "description": "Betting is the act of wagering money or something of value on an event with an uncertain outcome, with the primary intent of winning additional money or material goods.",
+        "examples": [
+        {
+            "example": "Placing a bet on a football match.",
+            "explanation": "You predict the outcome of the match and place a wager on it."
+        },
+        {
+            "example": "Participating in a poker game.",
+            "explanation": "You bet chips based on your hand and the actions of other players."
+        }
+        ]
+    },
+    {
+        "id": 2,
+        "name": "Types of Betting",
+        "description": "There are various types of betting, including sports betting, casino betting, and online betting.",
+        "examples": [
+        {
+            "example": "Sports Betting",
+            "explanation": "Betting on the outcome of sports events."
+        },
+        {
+            "example": "Casino Betting",
+            "explanation": "Betting on games like poker, blackjack, or roulette in a casino."
+        },
+        {
+            "example": "Online Betting",
+            "explanation": "Placing bets through online platforms."
+        }
+        ]
+    },
+    {
+        "id": 3,
+        "name": "Betting Odds",
+        "description": "Odds represent the probability of an event occurring and determine how much you can win.",
+        "examples": [
+        {
+            "example": "Decimal Odds",
+            "explanation": "A format that shows the total payout for a winning bet."
+        },
+        {
+            "example": "Fractional Odds",
+            "explanation": "A format that shows the profit relative to the stake."
+        }
+        ]
+    },
+    {
+        "id": 4,
+        "name": "Betting Strategies",
+        "description": "Strategies can help you make informed decisions when placing bets.",
+        "examples": [
+        {
+            "example": "Value Betting",
+            "explanation": "Identifying bets that are undervalued by bookmakers."
+        },
+        {
+            "example": "Bankroll Management",
+            "explanation": "Managing your betting funds to minimize risk."
+        }
+        ]
+    },
+    {
+        "id": 5,
+        "name": "Legal Considerations",
+        "description": "Betting laws vary by location, and it's important to understand the legal implications.",
+        "examples": [
+        {
+            "example": "Age Restrictions",
+            "explanation": "Most jurisdictions require bettors to be at least 18 years old."
+        },
+        {
+            "example": "Licensing",
+            "explanation": "Ensure that the betting operator is licensed and regulated."
+        }
+        ]
+    },
+    {
+        "id": 4,
+        "name": "Betting Strategies",
+        "description": "Strategies can help improve your chances of winning, such as bankroll management and understanding odds.",
+        "examples": [
+        {
+            "example": "Bankroll Management",
+            "explanation": "Setting a budget for betting and sticking to it."
+        },
+        {
+            "example": "Understanding Odds",
+            "explanation": "Knowing how to read and interpret betting odds."
+        }
+        ]
+    }
+]

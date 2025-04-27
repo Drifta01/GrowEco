@@ -1,8 +1,6 @@
 'use client';
 
-import React from 'react';
 import Image from 'next/image';
-import { Footer } from '@/components/Footer';
 
  const Page = () => {
     const gameImages = [

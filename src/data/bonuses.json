@@ -6,7 +6,8 @@
         "type": "Type A",
         "value": 10,
         "duration": 5,
-        "icon": "icon1.png"
+        "icon": "icon1.png",
+        "site": "https://example.com/bonus1"
     },
     {
         "id": 2,
@@ -15,7 +16,9 @@
         "type": "Type B",
         "value": 20,
         "duration": 10,
-        "icon": "icon2.png"
+        "icon": "icon2.png",
+        "site": "https://example.com/bonus2"
+        
     },
     {
         "id": 3,
@@ -24,6 +27,7 @@
         "type": "Type C",
         "value": 30,
         "duration": 15,
-        "icon": "icon3.png"
+        "icon": "icon3.png",
+        "site": "https://example.com/bonus3"
     }
 ]

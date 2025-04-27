@@ -18,6 +18,9 @@ export const Bonuses = (
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     {bonuses.map((bonus) => (
                         <div key={bonus.id} className="bg-white rounded-lg shadow-md overflow-hidden">
+                            <div key={bonus.name}>
+                                <div key={bonus.description}>
+                                  
                             <div className="p-4">
                                 <div className="flex justify-center items-center h-24">
                                     <Image
@@ -37,6 +40,17 @@ export const Bonuses = (
                                 <p className="text-xs text-gray-500 text-center mt-2">T&Cs Apply</p>
                             </div>
                         </div>
+                        </div>
+                        <div className="p-4">
+                            <h3 className="text-lg font-semibold text-center mt-2">{bonus.name}</h3>
+                            <p className="text-sm text-gray-600 text-center mt-2">{bonus.description}</p>
+                            <p className="text-sm text-gray-600 text-center mt-2">{bonus.id}</p>
+                            <p className="text-sm text-gray-600 text-center mt-2">{bonus.site}</p>
+                          
+
+                            </div>
+                            </div>
+                            
                     ))}
                 </div>
             </div>

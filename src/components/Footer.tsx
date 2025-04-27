@@ -5,29 +5,20 @@ import Link from 'next/link';
 
 export const Footer = () => {
   return (
-    <footer className="bg-slate-800 text-white absolute bottom-0 w-full">
-      <div className="container mx-auto px-2 py-8">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <div>
-            <h3 className="text-lg font-bold mb-4">About Us</h3>
-            <p className="text-slate-400">Your trusted guide to online gaming entertainment and information.</p>
-          </div>
-          <div>
-            <h3 className="text-lg font-bold mb-4">Quick Links</h3>
-          
-          </div>
-          <div>
-            <h3 className="text-lg font-bold mb-4">Newsletter</h3>
-            <div className="flex">
-          
-            </div>
-          </div>
-        </div>
-        <div className="border-t border-slate-700 mt-8 pt-8 text-center text-slate-400">
+    <div className="flex space-x-8 bg-gray-100 text-gray-900">
+      <footer className="bg-slate-600 text-white absolute bottom-0 w-full">
+        <nav className="max-w-7xl p-4 flex justify-between items-center">
+          <h3 className="text-lg font-bold mb-4">About Us</h3>
 
-        </div>
-      </div>
-    </footer>
+          <h3 className="text-lg font-bold mb-4">Quick Links</h3>
+
+          <h3 className="text-lg font-bold mb-4">Newsletter</h3>
+          <p className="text-white">
+            Your trusted guide to online gaming entertainment and information.
+          </p>
+          <div className="flex"></div>
+        </nav>
+      </footer>
+    </div>
   );
 };
-

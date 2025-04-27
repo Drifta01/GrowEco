@@ -1,54 +1,27 @@
 'use client';
-import React, { useState } from 'react';
 import Link from 'next/link';
-import Image from 'next/image';
 
 export const Header = () => {
-  const [isHovered, setIsHovered] = useState(false);
-
   return (
-    <nav className="bg-slate-700 text-white p-4">
-      <div className="container mx-auto flex items-center justify-between">
-        <div className="flex items-center space-x-4">
-          <div
-            className={`p-2 rounded-full transition-colors duration-200 ${
-              isHovered ? 'bg-yellow-300' : 'bg-yellow-500'
-            }`}
-            onMouseEnter={() => setIsHovered(true)}
-            onMouseLeave={() => setIsHovered(false)}
-          >
-            <Image
-              className="rounded-full"
-              src="/logo.jpg"
-              alt="logo"
-              width={100}
-              height={100}
-            />
+    <div className="bg-gray-100 text-gray-900">
+      <header className="bg-slate-600 text-white">
+        <nav className="max-w-7xl p-4 flex justify-between items-center">
+        
+          <p className="text-white text-2xl font-bold ">Gaming Directory</p>
+          <div className="flex space-x-8">
+            <div className="space-x-4">
+              <Link href="/casinos">Casinos</Link>
+              <Link href="/bonuses">Bonuses</Link>
+              <Link href="/games">Games</Link>
+              <Link href="/betting">Betting</Link>
+              {/* <Link href="/">Complaints</Link>
+              <Link href="/">News</Link>
+              <Link href="/">Forum</Link>
+              <Link href="/">About</Link> */}
+            </div>
           </div>
-          <ul className="flex space-x-4 text-lg font-semibold">
-            <li>
-              <Link href="/" className="hover:text-yellow-300 transition duration-200">
-                Home
-              </Link>
-            </li>
-            <li>
-              <Link href="/games" className="hover:text-yellow-300 transition duration-200">
-                Games
-              </Link>
-              </li>
-              <li>
-              <Link href="/casinos" className="hover:text-yellow-300 transition duration-200">
-              Casinos
-              </Link>
-            </li>
-            <li>
-              <Link href="/bonuses" className="hover:text-yellow-300 transition duration-200">
-               Bonus
-              </Link>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+        </nav>
+      </header>
+    </div>
   );
 };
