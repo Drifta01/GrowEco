@@ -63,7 +63,7 @@ export const NavMenu = () => {
             Games
           </Link>
           <Link
-            href="/betting"
+            href="/sportsbetting"
             className="bg-gray-200 text-black py-2 px-4 rounded-lg"
           >
             <Image
@@ -73,7 +73,7 @@ export const NavMenu = () => {
               width={100}
               height={100}
             />
-            Betting
+            Sports Betting
           </Link>
         </div>
       </section>

@@ -1,0 +1,52 @@
+{
+  "sportsbetting": [
+    {
+      "id": "sport-id",
+      "name": "Sport Name",
+      "leagues": [
+        {
+          "id": "league-id",
+          "name": "League Name",
+          "region": "Region/Country",
+          "events": [
+            {
+              "id": "event-id",
+              "participants": {
+                "home": "Home Team/Player",
+                "away": "Away Team/Player"
+              },
+              "startTime": "ISO datetime",
+              "status": "upcoming|live|finished",
+              "markets": [
+                {
+                  "type": "market-type",
+                  "outcomes": [
+                    {
+                      "name": "Outcome Name",
+                      "odds": 1.95
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "featured": {
+    "events": ["event-ids"],
+    "promotions": [
+      {
+        "id": "promo-id",
+        "title": "Promotion Title",
+        "description": "Promotion details"
+      }
+    ]
+  },
+  "liveEvents": ["event-ids"],
+  "betSlipDefaults": {
+    "maxSelections": 20,
+    "maxWinning": 100000
+  }
+}
