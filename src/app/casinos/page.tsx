@@ -1,9 +1,10 @@
-import getWildz from "../../actions/getWildz";
+/* eslint-disable @typescript-eslint/no-unused-vars */
+import getCasinos from "../../actions/getCasinos";
 import {Casinos} from "./Casinos";
 import casinos from "@/data/casinos.json"; // Assuming you have a JSON file with casino data
 
 export default async function Page() {
-    const wildzData = await getWildz();
+    const casinoData = await getCasinos();
 
    
     return (

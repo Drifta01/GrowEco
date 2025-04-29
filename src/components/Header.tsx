@@ -10,14 +10,14 @@ export const Header = () => {
           <p className="text-white text-2xl font-bold ">Gaming Directory</p>
           <div className="flex space-x-8">
             <div className="space-x-4">
+              <Link href="/">Home</Link>
               <Link href="/casinos">Casinos</Link>
               <Link href="/bonuses">Bonuses</Link>
-              <Link href="/games">Games</Link>
-              <Link href="/betting">Betting</Link>
-              {/* <Link href="/">Complaints</Link>
-              <Link href="/">News</Link>
+              <Link href="/slots">Slots</Link>
+              <Link href="/sportsbetting">Sports Betting</Link>
+              {/* <Link href="/">News</Link>
               <Link href="/">Forum</Link>
-              <Link href="/">About</Link> */}
+              <Link href="/">About</Link> */} 
             </div>
           </div>
         </nav>

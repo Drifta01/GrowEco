@@ -1,47 +1,47 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 'use client';
 
 import React from 'react';
 import Image from 'next/image';
 import casinos from '@/data/casinos.json'; // Assuming you have a JSON file with casino data
+import Link from 'next/link';
 
 export const Casinos = ({
- data = casinos, // Default to the imported casinos data if no data is passed
+  data = casinos, // Default to the imported casinos data if no data is passed
 }) => {
-
- 
-   
-
-
   return (
-    <div className="bg-gray-50 py-12">
-      <div className="container mx-auto px-4">
-        <h1 className="text-3xl font-semibold mb-8">Online Casinos</h1>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {casinos.map((casino) => (
-            <div key={casino.name} className="bg-white rounded-lg shadow-md overflow-hidden">
-              <div className="p-4">
-                <div className="flex justify-center items-center h-24">
-                  <Image
-                    src={'/pinky.png'}
-                    alt={'cainos.image'}
-                    width={100}
-                    height={100}
-                    className="object-contain"
-                  />
-                </div>
+
+    <div className="container py-6 bg-white">
+      <div className="text-3xl text-center mb-4">Casinos</div>
+      <div className="max-w-7xl mx-2 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8">
+        {casinos.map((casino) => (
+       <div key={casino.id} className="bg-gray-50 p-4 shadow-lg rounded-lg">
           
-                <div className="flex justify-center mt-4">
-                  <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
-                    Play Now
-                  </button>
-                </div>
-                <p className="text-xs text-gray-500 text-center mt-2">T&Cs Apply</p>
+          <div className="bg-gray-300 text-black text-center font-bold py-2 px-2 rounded-lg">
+              {casino.name}
+
+              <div className="flex justify-center items-center h-34">
+                <Image
+                  src={casino.image}
+                  alt={'image'}
+                  width={100}
+                  height={100}
+                  className="object-contain"
+                />
               </div>
+            
+
+            <div className="flex justify-center mt-4">
+              <button className="bg-gray-700 text-white hover:bg-gray-300 hover:text-black font-bold py-2 px-4 rounded mb-2">
+                <Link href={casino.url}>Play Now</Link>
+              </button>
             </div>
-          ))}
-        </div>
+          </div>
+          </div>
+        ))}
       </div>
-    </div>
+      </div>
+
+
   );
 };
-

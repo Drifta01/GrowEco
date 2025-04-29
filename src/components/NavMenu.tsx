@@ -50,7 +50,7 @@ export const NavMenu = () => {
             Bonuses
           </Link>
           <Link
-            href="/games"
+            href="/slots"
             className="bg-gray-200 text-black py-2 px-4 rounded-lg"
           >
             <Image
@@ -60,7 +60,7 @@ export const NavMenu = () => {
               width={100}
               height={100}
             />
-            Games
+           Slots
           </Link>
           <Link
             href="/sportsbetting"
@@ -68,7 +68,7 @@ export const NavMenu = () => {
           >
             <Image
               className="rounded-full"
-              src="/icons8-money-48.png"
+              src="/icons8-sports-betting-48.png"
               alt="bonus"
               width={100}
               height={100}
