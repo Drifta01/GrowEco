@@ -1,21 +1,24 @@
 [
     {
         "id": 1,
-        "name": "Casino A",
+        "name": "Vegas Palms Casino",
         "location": "Location A",
         "games": ["Game 1", "Game 2", "Game 3"],
         "rating": 4.5,
-        "image": "/images/casino-a.jpg",
-        "url": "https://example.com/casino-a"
+        "image": "/jane-blonde.webp",
+        "url": "https://secure.vegaspalmscasino.com/premium/casino/for-you/For%20You",
+        "targetBlank": true
+        
     },
     {
         "id": 2,
         "name": "Casino B",
-        "location": "Location B",
+        "location": "platinum play casino",
         "games": ["Game 4", "Game 5", "Game 6"],
         "rating": 4.0,
-        "image": "/images/casino-b.jpg",
-        "url": "https://example.com/casino-b"
+        "image": "/hermes.webp",
+        "url": "https://secure.platinumplaycasino.com/premium/casino/for-you/For%20You",
+        "targetBlank": true
     },
     {
         "id": 3,
@@ -23,8 +26,65 @@
         "location": "Location C",
         "games": ["Game 7", "Game 8", "Game 9"],
         "rating": 3.5,
-        "image": "/images/casino-c.jpg",
-        "url": "https://example.com/casino-c"
+        "image": "/hermes.webp",
+        "url": "https://example.com/casino-c",
+        "targetBlank": true
+        
+    },
+    {
+        "id": 4,
+        "name": "Casino D",
+        "location": "Location D",
+        "games": ["Game 10", "Game 11", "Game 12"],
+        "rating": 4.2,
+        "image": "/hermes.webp",
+        "url": "https://example.com/casino-d",
+        "targetBlank": true
+       
+    },
+    {
+        "id": 5,
+        "name": "Casino E",
+        "location": "Location E",
+        "games": ["Game 13", "Game 14", "Game 15"],
+        "rating": 3.8,
+        "image": "/jane-blonde.webp",
+        "url": "https://example.com/casino-e",
+        "targetBlank": true
+     
+    },
+    {
+        "id": 6,
+        "name": "Casino F",
+        "location": "Location F",
+        "games": ["Game 16", "Game 17", "Game 18"],
+        "rating": 4.1,
+        "image": "/jane-blonde.webp",
+        "url": "https://example.com/casino-f",
+        "targetBlank": true
+       
+    },
+    {
+        "id": 7,
+        "name": "Casino G",
+        "location": "Location G",
+        "games": ["Game 19", "Game 20", "Game 21"],
+        "rating": 3.9,
+        "image": "/LuckyTwins.jpg",
+        "url": "https://example.com/casino-g",
+        "targetBlank": true
+       
+    },
+    {
+        "id": 8,
+        "name": "Casino H",
+        "location": "Location H",
+        "games": ["Game 22", "Game 23", "Game 24"],
+        "rating": 4.3,
+        "image": "/NestEgg.jpg",
+        "url": "https://example.com/casino-h",
+        "targetBlank": true
+       
     }
   ]
 

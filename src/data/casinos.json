@@ -1,5 +1,4 @@
-
-    [
+[
        
             {
                 "id": 1,
@@ -8,27 +7,118 @@
                 "games": ["Game 1", "Game 2", "Game 3"],
                 "rating": 4.5,
                 "image": "/wildz.webp",
-                "url": "https://www.wildz.com/nz/"
+                "url": "https://www.wildz.com/nz/",
+                "targetBlank": true
             },
             {
                 "id": 2,
-                "name": "Casino B",
+                "name": "Vegas Palms Casino",
                 "location": "Location B",
                 "games": ["Game 4", "Game 5", "Game 6"],
                 "rating": 4.0,
-                "image": "/images/casino-b.jpg",
-                "url": "https://example.com/casino-b"
+                "image": "/vegas-palms-logo.png",
+                "url": "https://secure.vegaspalmscasino.com/premium/casino/for-you/For%20You",
+                "targetBlank": true
             },
             {
                 "id": 3,
-                "name": "Casino C",
+                "name": "Ruby Fortune Casino",
                 "location": "Location C",
                 "games": ["Game 7", "Game 8", "Game 9"],
                 "rating": 3.5,
-                "image": "/images/casino-c.jpg",
-                "url": "https://example.com/casino-c"
+                "image": "/ruby-fortune-logo.png",
+                "url": "https://secure.rubyfortune.com/premium/casino/for-you/For%20You",
+                "targetBlank": true
+            },
+            {
+                "id": 4,
+                "name": "Platinum Play Casino",
+                "location": "Location D",
+                "games": ["Game 10", "Game 11", "Game 12"],
+                "rating": 4.2,
+                "image": "/48983.jpg",
+                "url": "https://secure.platinumplaycasino.com/premium/casino/for-you/For%20You",
+                "targetBlank": true
+            },
+            {
+                "id": 5,
+                "name": "Euro Palace Casino",
+                "location": "Location E",
+                "games": ["Game 13", "Game 14", "Game 15"],
+                "rating": 3.8,
+                "image": "/48983.jpg",
+                "url": "https://secure.europalace.com/premium/casino/for-you/For%20You",
+                "targetBlank": true
+            },
+            {
+                "id": 6,
+                "name": "7 Sultans Casino",
+                "location": "Location F",
+                "games": ["Game 16", "Game 17", "Game 18"],
+                "rating": 4.1,
+                "image": "/48983.jpg",
+                "url": "https://secure.7sultanscasino.com/premium/casino/for-you/For%20You",
+                "targetBlank": true
+            },
+            {
+                "id": 7,
+                "name": "Royal Vegas Casino",
+                "location": "Location G",
+                "games": ["Game 19", "Game 20", "Game 21"],
+                "rating": 3.9,
+                "image": "/48983.jpg",
+                "url": "https://secure.royalvegascasino.com/premium/casino/for-you/For%20You",
+                "targetBlank": true
+            },
+            {
+                "id": 8,
+                "name": "Captain Cooks Casino",
+                "location": "Location H",
+                "games": ["Game 22", "Game 23", "Game 24"],
+                "rating": 4.3,
+                "image": "/48983.jpg",
+                "url": "https://captaincooks3.gameassists.co.uk/gambit/en/games/foryou",
+                "targetBlank": true
+            },
+            {
+                "id": 9,
+                "name": "Casino I",
+                "location": "Location I",
+                "games": ["Game 25", "Game 26", "Game 27"],
+                "rating": 4.0,
+                "image": "/48983.jpg",
+                "url": "https://example.com/casino-i",
+                "targetBlank": true
+            },
+            {
+                "id": 10,
+                "name": "Casino J",
+                "location": "Location J",
+                "games": ["Game 28", "Game 29", "Game 30"],
+                "rating": 3.7,
+                "image": "/48983.jpg",
+                "url": "https://example.com/casino-j",
+                "targetBlank": true
+            },     
+        {
+                "id": 11,
+                "name": "Casino K",
+                "location": "Location K",
+                "games": ["Game 31", "Game 32", "Game 33"],
+                "rating": 4.4,
+                "image": "/48983.jpg",
+                "url": "https://example.com/casino-k",
+                "targetBlank": true
+            },
+            {
+                "id": 12,
+                "name": "Casino L",
+                "location": "Location L",
+                "games": ["Game 34", "Game 35", "Game 36"],
+                "rating": 3.6,
+                "image": "/48983.jpg",
+                "url": "https://example.com/casino-l",
+                "targetBlank": true
             }
-        
-        
     ]
-    
+

@@ -1,0 +1,85 @@
+[
+    {
+        "id": 1,
+        "name": "Bonus 1",
+        "description": "This is the first bonus.",
+        "type": "Type A",
+        "value": 10,
+        "duration": 5,
+        "image": "/NestEgg.jpg",
+        "site": "https://example.com/bonus1"
+    },
+    {
+        "id": 2,
+        "name": "Bonus 2",
+        "description": "This is the second bonus.",
+        "type": "Type B",
+        "value": 20,
+        "duration": 10,
+        "image": "/NestEgg.jpg",
+        "site": "https://example.com/bonus2"
+        
+    },
+    {
+        "id": 3,
+        "name": "Bonus 3",
+        "description": "This is the third bonus.",
+        "type": "Type C",
+        "value": 30,
+        "duration": 15,
+        "image": "/NestEgg.jpg",
+        "site": "https://example.com/bonus3"
+    },
+    {
+        "id": 4,
+        "name": "Bonus 4",
+        "description": "This is the fourth bonus.",
+        "type": "Type D",
+        "value": 40,
+        "duration": 20,
+        "image": "/NestEgg.jpg",
+        "site": "https://example.com/bonus4"
+    },
+    {
+        "id": 5,
+        "name": "Bonus 5",
+        "description": "This is the fifth bonus.",
+        "type": "Type E",
+        "value": 50,
+        "duration": 25,
+        "image": "/NestEgg.jpg",
+        "site": "https://example.com/bonus5"
+    },
+    
+    {
+        "id": 6,
+        "name": "Bonus 6",
+        "description": "This is the sixth bonus.",
+        "type": "Type F",
+        "value": 60,
+        "duration": 30,
+        "image": "/NestEgg.jpg",
+        "site": "https://example.com/bonus6"
+    },
+    {
+        "id": 7,
+        "name": "Bonus 7",
+        "description": "This is the seventh bonus.",
+        "type": "Type G",
+        "value": 70,
+        "duration": 35,
+        "image": "/NestEgg.jpg",
+        "site": "https://example.com/bonus7"
+    },
+    {
+        "id": 8,
+        "name": "Bonus 8",
+        "description": "This is the eighth bonus.",
+        "type": "Type H",
+        "value": 80,
+        "duration": 40,
+        "image": "/NestEgg.jpg",
+        "site": "https://example.com/bonus8"
+    }
+  
+]
