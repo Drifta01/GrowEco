@@ -10,6 +10,7 @@ export const NavMenu = () => {
         <h1 className="text-4xl font-bold mb-4">Text Here</h1>
         <p className="text-lg max-w-3xl mx-auto mb-0"></p>
         <div className="flex justify-center space-x-6">
+         
           <Link
             href="/"
             className="bg-fray-200 text-black py-2 px-4 rounded-lg"
@@ -74,6 +75,19 @@ export const NavMenu = () => {
               height={100}
             />
             Sports Betting
+          </Link>
+          <Link
+            href="/StreamLive"
+            className="bg-gray-200 text-black py-2 px-4 rounded-lg"
+          >
+            <Image
+              className="rounded-full"
+              src="/wildz.webp"
+              alt="bonus"
+              width={100}
+              height={100}
+            />
+            Live Stream
           </Link>
         </div>
       </section>
