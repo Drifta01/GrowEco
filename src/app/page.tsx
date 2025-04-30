@@ -1,3 +1,5 @@
+
+
 'use client';
 import Image from 'next/image';
 import './globals.css';
@@ -5,11 +7,11 @@ import casinos from '@/data/casinos.json';
 import Link from 'next/link';
 import { useState } from 'react';
 
-export const Home = () => {
-  const [activeMenu, setActiveMenu] = useState<number | null>(12);
+// Remove the named export and directly use default export
+export default function Home() {
+  const [activeMenu, setActiveMenu] = useState<number | null>(null);
   
- 
-  const featuredCasino = casinos[4]; // Assuming the fifth casino is the featured one
+  const featuredCasino = casinos[0]; 
   return (
     <div className="bg-gray-50 min-h-screen">
       {/* Hover Menu */}
@@ -49,41 +51,7 @@ export const Home = () => {
                   </div>
                 </div>
               )}
-            </div>
-            
-            <div 
-              className="relative group px-6 py-3 cursor-pointer"
-              onMouseEnter={() => setActiveMenu(2)}
-              onMouseLeave={() => setActiveMenu(null)}
-            >
-              <div className="flex items-center space-x-1">
-                <span className="font-medium">Tournaments</span>
-                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                </svg>
-              </div>
               
-              {activeMenu === 2 && (
-                <div className="absolute left-0 top-full mt-1 w-72 bg-white border border-gray-200 shadow-lg rounded-md z-20">
-                  <div className="p-4">
-                    <h3 className="font-bold text-lg border-b pb-2 mb-3">{featuredCasino.tournaments.title}</h3>
-                    <ul className="space-y-3">
-                      {featuredCasino.tournaments.items.map((tournament, idx) => (
-                        <li key={idx} className="hover:bg-gray-50 p-2 rounded transition-colors">
-                          <p className="font-semibold text-slate-700">{tournament.title}</p>
-                          <p className="text-sm text-gray-500">{tournament.description}</p>
-                        </li>
-                      ))}
-                    </ul>
-                    <Link 
-                      href="/tournaments" 
-                      className="block mt-4 text-center text-sm text-indigo-600 hover:underline"
-                    >
-                      View all tournaments
-                    </Link>
-                  </div>
-                </div>
-              )}
             </div>
             
             <div 
@@ -148,7 +116,7 @@ export const Home = () => {
             {casinos.map((casino) => (
               <div 
                 key={casino.id} 
-                className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow ease-in-out duration-300"
+                className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300"
               >
                 <div className="relative h-48">
                   <Image
@@ -196,7 +164,9 @@ export const Home = () => {
   );
 };
 
-export default Home;
+
+
+
 
 
 
