@@ -64,7 +64,7 @@ export const NavMenu = () => {
            Slots
           </Link>
           <Link
-            href="/sportsbetting"
+            href="/sportBet"
             className="bg-gray-200 text-black py-2 px-4 rounded-lg"
           >
             <Image
@@ -76,19 +76,7 @@ export const NavMenu = () => {
             />
             Sports Betting
           </Link>
-          <Link
-            href="/StreamLive"
-            className="bg-gray-200 text-black py-2 px-4 rounded-lg"
-          >
-            <Image
-              className="rounded-full"
-              src="/wildz.webp"
-              alt="bonus"
-              width={100}
-              height={100}
-            />
-            Live Stream
-          </Link>
+   
         </div>
       </section>
     </div>

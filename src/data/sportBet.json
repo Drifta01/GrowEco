@@ -1,0 +1,265 @@
+[
+  {
+    "id": 1,
+    "name": "Football",
+    "slug": "football",
+    "icon": "/football.png",
+    "category": "Popular",
+    "featured": true,
+    "matches": [
+      {
+        "id": "match-001",
+        "team1": "Arsenal",
+        "draw": "even",
+        "team2": "Manchester United",
+        "team1Logo": "/team-logos/arsenal.png",
+        "team2Logo": "/team-logos/man-united.png",
+        "date": "Today",
+        "time": "19:45",
+        "league": "Premier League",
+        "live": true,
+        "odds": {
+          "team1": 2.10,
+          "draw": 3.25,
+          "team2": 3.50
+        },
+        "marketCount": 125,
+        "score": "1-0"
+      },
+      {
+        "id": "match-002",
+        "team1": "Barcelona",
+        "team2": "Real Madrid",
+        "team1Logo": "/team-logos/barcelona.png",
+        "team2Logo": "/team-logos/real-madrid.png",
+        "date": "Tomorrow",
+        "time": "20:00",
+        "league": "La Liga",
+        "live": false,
+        "odds": {
+          "team1": 1.95,
+          "draw": 3.40,
+          "team2": 3.80
+        },
+        "marketCount": 143
+      },
+      {
+        "id": "match-003",
+        "team1": "Bayern Munich",
+        "team2": "Dortmund",
+        "team1Logo": "/team-logos/bayern.png",
+        "team2Logo": "/team-logos/dortmund.png",
+        "date": "May 4",
+        "time": "17:30",
+        "league": "Bundesliga",
+        "live": false,
+        "odds": {
+          "team1": 1.65,
+          "draw": 4.00,
+          "team2": 4.50
+        },
+        "marketCount": 112
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Basketball",
+    "slug": "basketball",
+    "icon": "/icons8-basketball-94.png",
+    "category": "Popular",
+    "featured": true,
+    "matches": [
+      {
+        "id": "match-004",
+        "team1": "LA Lakers",
+        "team2": "Boston Celtics",
+        "team1Logo": "/team-logos/lakers.png",
+        "team2Logo": "/team-logos/celtics.png",
+        "date": "Today",
+        "time": "23:00",
+        "league": "NBA",
+        "live": true,
+        "odds": {
+          "team1": 1.75,
+          "team2": 2.05
+        },
+        "marketCount": 68,
+        "score": "88-92"
+      },
+      {
+        "id": "match-005",
+        "team1": "Golden State Warriors",
+        "team2": "Brooklyn Nets",
+        "team1Logo": "/team-logos/warriors.png",
+        "team2Logo": "/team-logos/nets.png",
+        "date": "Tomorrow",
+        "time": "02:00",
+        "league": "NBA",
+        "live": false,
+        "odds": {
+          "team1": 1.90,
+          "team2": 1.90
+        },
+        "marketCount": 72
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Tennis",
+    "slug": "tennis",
+    "icon": "/icons8-tennis-48.png",
+    "category": "Popular",
+    "featured": false,
+    "matches": [
+      {
+        "id": "match-006",
+        "team1": "Novak Djokovic",
+        "team2": "Rafael Nadal",
+        "date": "Today",
+        "time": "14:00",
+        "league": "French Open",
+        "live": false,
+        "odds": {
+          "team1": 1.85,
+          "team2": 1.95
+        },
+        "marketCount": 42
+      },
+      {
+        "id": "match-007",
+        "team1": "Iga Swiatek",
+        "team2": "Naomi Osaka",
+        "date": "Tomorrow",
+        "time": "12:30",
+        "league": "French Open",
+        "live": false,
+        "odds": {
+          "team1": 1.60,
+          "team2": 2.30
+        },
+        "marketCount": 38
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Baseball",
+    "slug": "baseball",
+    "icon": "/icons8-baseball-48.png",
+    "category": "American Sports",
+    "featured": false,
+    "matches": [
+      {
+        "id": "match-008",
+        "team1": "NY Yankees",
+        "team2": "Boston Red Sox",
+        "date": "May 5",
+        "time": "19:00",
+        "league": "MLB",
+        "live": false,
+        "odds": {
+          "team1": 1.80,
+          "team2": 2.00
+        },
+        "marketCount": 54
+      },
+      {
+        "id": "match-009",
+        "team1": "LA Dodgers",
+        "team2": "Chicago Cubs",
+        "date": "May 6",
+        "time": "21:00",
+        "league": "MLB",
+        "live": false,
+        "odds": {
+          "team1": 1.70,
+          "team2": 2.10
+        },
+        "marketCount": 52
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Hockey",
+    "slug": "hockey",
+    "icon": "/icons8-hockey-94.png",
+    "category": "Winter Sports",
+    "featured": false,
+    "matches": [
+      {
+        "id": "match-010",
+        "team1": "Toronto Maple Leafs",
+        "team2": "Boston Bruins",
+        "date": "May 4",
+        "time": "00:00",
+        "league": "NHL",
+        "live": false,
+        "odds": {
+          "team1": 2.20,
+          "team2": 1.70
+        },
+        "marketCount": 46
+      },
+      {
+        "id": "match-011",
+        "team1": "Tampa Bay Lightning",
+        "team2": "Florida Panthers",
+        "date": "May 5",
+        "time": "01:30",
+        "league": "NHL",
+        "live": false,
+        "odds": {
+          "team1": 1.90,
+          "team2": 1.90
+        },
+        "marketCount": 42
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "name": "MMA",
+    "slug": "mma",
+    "icon": "/wmremove-transformed.jpeg",
+    "category": "Combat Sports",
+    "featured": false,
+    "matches": [
+      {
+        "id": "match-012",
+        "team1": "Israel Adesanya",
+        "team2": "Alex Pereira",
+        "date": "May 12",
+        "time": "04:00",
+        "league": "UFC 289",
+        "live": false,
+        "odds": {
+          "team1": 2.10,
+          "team2": 1.75
+        },
+        "marketCount": 32
+      },
+      {
+        "id": "match-013",
+        "team1": "Amanda Nunes",
+        "team2": "Julianna Peña",
+        "date": "May 12",
+        "time": "03:00",
+        "league": "UFC 289",
+        "live": false,
+        "odds": {
+          "team1": 1.55,
+          "team2": 2.40
+        },
+        "marketCount": 28
+      }
+    ]
+  }
+]
+
+
+
+
+

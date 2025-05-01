@@ -14,7 +14,7 @@ export const Header = () => {
               <Link href="/casinos">Casinos</Link>
               <Link href="/bonuses">Bonuses</Link>
               <Link href="/slots">Slots</Link>
-              <Link href="/sportsbetting">Sports Betting</Link>
+              <Link href="/sportBet">Sports Betting</Link>
               {/* <Link href="/">News</Link>
               <Link href="/">Forum</Link>
               <Link href="/">About</Link> */} 

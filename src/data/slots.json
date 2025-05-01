@@ -7,18 +7,63 @@
         "rating": 4.5,
         "image": "/jane-blonde.webp",
         "url": "https://secure.vegaspalmscasino.com/premium/casino/for-you/For%20You",
-        "targetBlank": true
-        
+        "targetBlank": true,
+        "casinoInfo": {
+            "currentBonus": {
+                "title": "200% Welcome Bonus",
+                "description": "Get up to $100 on your first deposit",
+                "expiryDate": "June 30, 2025"
+            },
+            "upcomingEvents": [
+                {
+                    "title": "Weekly Slot Tournament",
+                    "date": "Every Friday"
+                },
+                {
+                    "title": "VIP Summer Party",
+                    "date": "July 15, 2025"
+                }
+            ],
+            "features": [
+                "Live Dealers",
+                "Mobile App",
+                "24/7 Support",
+                "Fast Withdrawals"
+            ]
+        }
     },
     {
         "id": 2,
-        "name": "Casino B",
-        "location": "platinum play casino",
+        "name": "Platinum Play Casino",
+        "location": "Location B",
         "games": ["Game 4", "Game 5", "Game 6"],
         "rating": 4.0,
         "image": "/hermes.webp",
         "url": "https://secure.platinumplaycasino.com/premium/casino/for-you/For%20You",
-        "targetBlank": true
+        "targetBlank": true,
+        "casinoInfo": {
+            "currentBonus": {
+                "title": "100% Welcome Bonus",
+                "description": "Get up to $500 + 50 free spins",
+                "expiryDate": "May 31, 2025"
+            },
+            "upcomingEvents": [
+                {
+                    "title": "Mega Jackpot Draw",
+                    "date": "May 25, 2025"
+                },
+                {
+                    "title": "Weekend Cashback",
+                    "date": "Every Saturday-Sunday"
+                }
+            ],
+            "features": [
+                "Progressive Jackpots",
+                "Loyalty Program",
+                "Weekly Promotions",
+                "Crypto Payments"
+            ]
+        }
     },
     {
         "id": 3,
@@ -28,8 +73,26 @@
         "rating": 3.5,
         "image": "/hermes.webp",
         "url": "https://example.com/casino-c",
-        "targetBlank": true
-        
+        "targetBlank": true,
+        "casinoInfo": {
+            "currentBonus": {
+                "title": "No Deposit Bonus",
+                "description": "20 free spins just for signing up",
+                "expiryDate": "Limited time offer"
+            },
+            "upcomingEvents": [
+                {
+                    "title": "Blackjack Tournament",
+                    "date": "June 5-7, 2025"
+                }
+            ],
+            "features": [
+                "Instant Play",
+                "Mobile Friendly",
+                "Weekend Cashback",
+                "VIP Program"
+            ]
+        }
     },
     {
         "id": 4,
@@ -39,8 +102,30 @@
         "rating": 4.2,
         "image": "/hermes.webp",
         "url": "https://example.com/casino-d",
-        "targetBlank": true
-       
+        "targetBlank": true,
+        "casinoInfo": {
+            "currentBonus": {
+                "title": "Triple Welcome Package",
+                "description": "Up to $1500 on your first three deposits",
+                "expiryDate": "Ongoing"
+            },
+            "upcomingEvents": [
+                {
+                    "title": "Slot Championship",
+                    "date": "May 20-27, 2025"
+                },
+                {
+                    "title": "Live Casino Weekend",
+                    "date": "Last weekend of each month"
+                }
+            ],
+            "features": [
+                "1000+ Games",
+                "Fast Payouts",
+                "Multi-language Support",
+                "24/7 Live Chat"
+            ]
+        }
     },
     {
         "id": 5,
@@ -50,8 +135,26 @@
         "rating": 3.8,
         "image": "/jane-blonde.webp",
         "url": "https://example.com/casino-e",
-        "targetBlank": true
-     
+        "targetBlank": true,
+        "casinoInfo": {
+            "currentBonus": {
+                "title": "50% Reload Bonus",
+                "description": "Every Monday, up to $200",
+                "expiryDate": "Recurring weekly"
+            },
+            "upcomingEvents": [
+                {
+                    "title": "Mystery Bonus Day",
+                    "date": "Every Thursday"
+                }
+            ],
+            "features": [
+                "Exclusive Games",
+                "Weekly Cashback",
+                "Personalized Offers",
+                "Tournaments"
+            ]
+        }
     },
     {
         "id": 6,
@@ -61,8 +164,30 @@
         "rating": 4.1,
         "image": "/jane-blonde.webp",
         "url": "https://example.com/casino-f",
-        "targetBlank": true
-       
+        "targetBlank": true,
+        "casinoInfo": {
+            "currentBonus": {
+                "title": "Free Spins Weekend",
+                "description": "100 free spins on Starburst",
+                "expiryDate": "This weekend only"
+            },
+            "upcomingEvents": [
+                {
+                    "title": "Summer Festival",
+                    "date": "June 1-30, 2025"
+                },
+                {
+                    "title": "New Game Release Party",
+                    "date": "May 15, 2025"
+                }
+            ],
+            "features": [
+                "Mobile App",
+                "Quick Registration",
+                "Fast Withdrawals",
+                "Weekend Promotions"
+            ]
+        }
     },
     {
         "id": 7,
@@ -72,8 +197,26 @@
         "rating": 3.9,
         "image": "/LuckyTwins.jpg",
         "url": "https://example.com/casino-g",
-        "targetBlank": true
-       
+        "targetBlank": true,
+        "casinoInfo": {
+            "currentBonus": {
+                "title": "VIP Welcome Offer",
+                "description": "200% bonus + 100 free spins",
+                "expiryDate": "June 10, 2025"
+            },
+            "upcomingEvents": [
+                {
+                    "title": "Prize Drop Week",
+                    "date": "May 22-29, 2025"
+                }
+            ],
+            "features": [
+                "Live Dealers",
+                "Sportsbook",
+                "Crypto Payments",
+                "Loyalty Rewards"
+            ]
+        }
     },
     {
         "id": 8,
@@ -83,9 +226,29 @@
         "rating": 4.3,
         "image": "/NestEgg.jpg",
         "url": "https://example.com/casino-h",
-        "targetBlank": true
-       
+        "targetBlank": true,
+        "casinoInfo": {
+            "currentBonus": {
+                "title": "Birthday Bonus",
+                "description": "Special gift on your birthday",
+                "expiryDate": "Ongoing"
+            },
+            "upcomingEvents": [
+                {
+                    "title": "May Madness Promotion",
+                    "date": "All throughout May"
+                },
+                {
+                    "title": "Live Casino Tournament",
+                    "date": "June 3-5, 2025"
+                }
+            ],
+            "features": [
+                "No Wagering Requirements",
+                "Instant Withdrawals",
+                "Game Shows",
+                "Regular Promotions"
+            ]
+        }
     }
-  ]
-
-
+]
