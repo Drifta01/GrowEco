@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
     "target": "ES2017",
-    "jsx" : "react-jsx",
+    "jsx": "preserve",
     "lib": [
       "dom",
       "dom.iterable",
@@ -16,7 +16,6 @@
     "moduleResolution": "bundler",
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "jsx": "preserve",
     "incremental": true,
     "baseUrl": "./src",
     "plugins": [
@@ -37,8 +36,9 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx",
-    ".next/types/**/*.ts"
-, "src/app/Wildz"  ],
+    ".next/types/**/*.ts",
+    "src/app/Wildz"
+  ],
   "exclude": [
     "node_modules"
   ]

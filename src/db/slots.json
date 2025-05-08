@@ -3,7 +3,11 @@
         "id": 1,
         "name": "Vegas Palms Casino",
         "location": "Location A",
-        "games": ["Game 1", "Game 2", "Game 3"],
+        "games": [
+            "Game 1",
+            "Game 2",
+            "Game 3"
+        ],
         "rating": 4.5,
         "image": "/jane-blonde.webp",
         "url": "https://secure.vegaspalmscasino.com/premium/casino/for-you/For%20You",
@@ -36,7 +40,11 @@
         "id": 2,
         "name": "Platinum Play Casino",
         "location": "Location B",
-        "games": ["Game 4", "Game 5", "Game 6"],
+        "games": [
+            "Game 4",
+            "Game 5",
+            "Game 6"
+        ],
         "rating": 4.0,
         "image": "/hermes.webp",
         "url": "https://secure.platinumplaycasino.com/premium/casino/for-you/For%20You",
@@ -44,13 +52,13 @@
         "casinoInfo": {
             "currentBonus": {
                 "title": "100% Welcome Bonus",
-                "description": "Get up to $500 + 50 free spins",
+                "description": "50% Match Bonus up to $200",
                 "expiryDate": "May 31, 2025"
             },
             "upcomingEvents": [
                 {
-                    "title": "Mega Jackpot Draw",
-                    "date": "May 25, 2025"
+                    "title": "",
+                    "date": ""
                 },
                 {
                     "title": "Weekend Cashback",
@@ -67,11 +75,15 @@
     },
     {
         "id": 3,
-        "name": "Casino C",
-        "location": "Location C",
-        "games": ["Game 7", "Game 8", "Game 9"],
+        "name": "Jackpot lounge",
+        "location": "https://jackpotlounge.com/",
+        "games": [
+            "",
+            "Game 8",
+            "Game 9"
+        ],
         "rating": 3.5,
-        "image": "/hermes.webp",
+        "image": "/jackpot-L-bonus.jpg",
         "url": "https://example.com/casino-c",
         "targetBlank": true,
         "casinoInfo": {
@@ -98,7 +110,11 @@
         "id": 4,
         "name": "Casino D",
         "location": "Location D",
-        "games": ["Game 10", "Game 11", "Game 12"],
+        "games": [
+            "Game 10",
+            "Game 11",
+            "Game 12"
+        ],
         "rating": 4.2,
         "image": "/hermes.webp",
         "url": "https://example.com/casino-d",
@@ -131,7 +147,11 @@
         "id": 5,
         "name": "Casino E",
         "location": "Location E",
-        "games": ["Game 13", "Game 14", "Game 15"],
+        "games": [
+            "Game 13",
+            "Game 14",
+            "Game 15"
+        ],
         "rating": 3.8,
         "image": "/jane-blonde.webp",
         "url": "https://example.com/casino-e",
@@ -160,7 +180,11 @@
         "id": 6,
         "name": "Casino F",
         "location": "Location F",
-        "games": ["Game 16", "Game 17", "Game 18"],
+        "games": [
+            "Game 16",
+            "Game 17",
+            "Game 18"
+        ],
         "rating": 4.1,
         "image": "/jane-blonde.webp",
         "url": "https://example.com/casino-f",
@@ -193,7 +217,11 @@
         "id": 7,
         "name": "Casino G",
         "location": "Location G",
-        "games": ["Game 19", "Game 20", "Game 21"],
+        "games": [
+            "Game 19",
+            "Game 20",
+            "Game 21"
+        ],
         "rating": 3.9,
         "image": "/LuckyTwins.jpg",
         "url": "https://example.com/casino-g",
@@ -222,7 +250,11 @@
         "id": 8,
         "name": "Casino H",
         "location": "Location H",
-        "games": ["Game 22", "Game 23", "Game 24"],
+        "games": [
+            "Game 22",
+            "Game 23",
+            "Game 24"
+        ],
         "rating": 4.3,
         "image": "/NestEgg.jpg",
         "url": "https://example.com/casino-h",
@@ -248,6 +280,39 @@
                 "Instant Withdrawals",
                 "Game Shows",
                 "Regular Promotions"
+            ]
+        }
+    },
+    {
+        "id": 9,
+        "name": "Casino I",
+        "location": "Location I",
+        "games": [
+            "Game 25",
+            "Game 26",
+            "Game 27"
+        ],
+        "rating": 4.0,
+        "image": "/LuckyTwins.jpg",
+        "url": "https://example.com/casino-i",
+        "targetBlank": true,
+        "casinoInfo": {
+            "currentBonus": {
+                "title": "Refer a Friend Bonus",
+                "description": "$50 for each friend you refer",
+                "expiryDate": "Ongoing"
+            },
+            "upcomingEvents": [
+                {
+                    "title": "",
+                    "date": ""
+                }
+            ],
+            "features": [
+                "Exclusive VIP Club",
+                "Daily Promotions",
+                "Mobile Friendly",
+                "24/7 Customer Support"
             ]
         }
     }

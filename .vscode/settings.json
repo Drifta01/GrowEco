@@ -1,0 +1,6 @@
+{
+  "html.format.preserveNewLines": false,
+  "sortLines.ignoreUnselectedLastLine": false,
+  "sortLines.filterBlankLines": false,
+  "less.format.preserveNewLines": false
+}

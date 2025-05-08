@@ -1,9 +1,6 @@
-'use client';
-import { SportBet } from './SportBet';
+import sportBet from '@/db/sportBet.json';
+import SportBet from './SportBet';
 
-export default function Page() {
-  // No need to rename the component here - the URL is based on folder name
-  return (
-    <SportBet />
-  )
+export default async function Page() {
+  return <SportBet />;
 }

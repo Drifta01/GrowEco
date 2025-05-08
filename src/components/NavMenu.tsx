@@ -6,77 +6,47 @@ import Link from 'next/link';
 export const NavMenu = () => {
   return (
     <div className="bg-gray-100 text-gray-900">
-      <section className="text-center py-16 bg-gray-200">
-        <h1 className="text-4xl font-bold mb-4">Text Here</h1>
-        <p className="text-lg max-w-3xl mx-auto mb-0"></p>
-        <div className="flex justify-center space-x-6">
-         
-          <Link
-            href="/"
-            className="bg-fray-200 text-black py-2 px-4 rounded-lg"
-          >
-            <Image
-              className="rounded-full"
-              src="/icons8-home-94.png"
-              alt="bonus"
-              width={100}
-              height={100}
-            />
-            Home
-          </Link>
+      <section className="py-2">
+        <div className="grid grid-cols-4 gap-4  max-w-3/4 mx-auto bg-slate-900 rounded-md overflow-hidden">
           <Link
             href="/casinos"
-            className="bg-fray-200 text-black py-2 px-4 rounded-lg"
+            className="flex flex-col items-center text-center p-6 text-white hover:bg-gray-700 transition-colors"
           >
-            <Image
-              className="rounded-full"
-              src="/icons8-roulette-94.png"
-              alt="bonus"
-              width={100}
-              height={100}
-            />
-            Casinos
+            <div className="w-10 h-10 bg-yellow-500 rounded-full flex items-center justify-center mb-2">
+              <p className="text-white" />
+            </div>
+            <span className="text-sm">Casinos</span>
           </Link>
+
           <Link
             href="/bonuses"
-            className="bg-gray-200 text-black py-2 px-4 rounded-lg"
+            className="flex flex-col items-center text-center p-6 text-white hover:bg-gray-700 transition-colors"
           >
-            <Image
-              className="rounded-full"
-              src="/icons8-gift-48.png"
-              alt="bonus"
-              width={100}
-              height={100}
-            />
-            Bonuses
+            <div className="w-10 h-10 bg-pink-500 rounded-full flex items-center justify-center mb-2">
+              <div className="text-white" />
+            </div>
+            <span className="text-sm">Bonuses</span>
           </Link>
+
           <Link
             href="/slots"
-            className="bg-gray-200 text-black py-2 px-4 rounded-lg"
+            className="flex flex-col items-center text-center p-6 text-white hover:bg-gray-700 transition-colors"
           >
-            <Image
-              className="rounded-full"
-              src="/icons8-casino-48.png"
-              alt="bonus"
-              width={100}
-              height={100}
-            />
-           Slots
+            <div className="w-10 h-10 bg-blue-500 rounded-full flex items-center justify-center mb-2">
+              <div className="text-white" />
+            </div>
+            <span className="text-sm">Slots</span>
           </Link>
+
           <Link
             href="/sportBet"
-            className="bg-gray-200 text-black py-2 px-4 rounded-lg"
+            className="flex flex-col items-center text-center p-6 text-white hover:bg-gray-700 transition-colors"
           >
-            <Image
-              className="rounded-full"
-              src="/icons8-sports-betting-48.png"
-              alt="bonus"
-              width={100}
-              height={100}
-            />
-            Sports Betting
+            <div className="w-10 h-10 bg-orange-500 rounded-full flex items-center justify-center mb-2">
+              <div className="text-white" />
+            </div>
+            <span className="text-sm">Sports Bet</span>
           </Link>
-   
         </div>
       </section>
     </div>
