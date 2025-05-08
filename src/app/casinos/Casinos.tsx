@@ -10,42 +10,39 @@ export const Casinos = ({
   data = casinos, // Default to the imported casinos data if no data is passed
 }) => {
   return (
-    <div className="bg-gray-50 py-2">
-      <div className="container mx-auto px-4">
-        <h1 className="text-3xl font-semibold mb-8 text-center">
-          {' '}
-          Online Casinos
-        </h1>
-        <div className="mx-8 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-8">
+    <div className="flex-grow bg-gray-50 py-8">
+      <div className="container mx-auto px-0">
+        <h1 className="text-lg font-semibold mb-8"> Online Casinos</h1>
+        <div className="mx-8 grid grid-cols-1 md:grid-cols-4 lg:grid-cols-6 gap-8">
           {casinos.map((casinos) => (
             <div
               key={casinos.id}
-              className="bg-white rounded-lg shadow-md overflow-hidden"
+              className="flex flex-col h-full bg-white rounded-lg hover:shadow-xl hover:shadow-slate-900 transition-shadow"
             >
               <div className="bg-white text-black text-center font-bold  rounded-lg">
                 {casinos.name}
-                <div className="p-4">
-                  <div className="flex justify-center items-center h-24">
-                    <Image
-                      src={casinos.image}
-                      alt={'image'}
-                      width={100}
-                      height={100}
-                      className="object-contain h-full w-full"
-                    />
-                  </div>
-                </div>
 
-                <div className="flex justify-center mt-4">
-                  <button className="bg-gray-700 text-white hover:bg-gray-300 hover:text-black font-bold py-2 px-4 rounded mb-2">
-                    <Link
-                      href={casinos.url}
-                      target={casinos.targetBlank ? '_blank' : '_self'}
-                    >
-                      Play Now
-                    </Link>
-                  </button>
+                <div className="flex justify-center items-center p-4 h-24">
+                  <Image
+                    src={casinos.image}
+                    alt={'image'}
+                    width={120}
+                    height={120}
+                    className="object-contain"
+                  />
                 </div>
+              </div>
+
+              <div className="mt-0 p-0">
+                <button className="w-full bg-blue-500 text-white py-1 px-2 rounded hover:bg-blue-600 transition-colors">
+                  <Link
+                    href={casinos.url}
+                    target={casinos.targetBlank ? '_blank' : '_self'}
+                    className="block w-full"
+                  >
+                    Play Now
+                  </Link>
+                </button>
               </div>
             </div>
           ))}

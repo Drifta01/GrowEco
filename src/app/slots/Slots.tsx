@@ -31,15 +31,15 @@ export const Slots = () => {
               </div>
 
               <div className="mt-0 p-0">
-                <Link
-                  href={slots.url}
-                  target={slots.targetBlank ? '_blank' : '_self'}
-                  className="block w-full"
-                >
-                  <button className="w-full bg-blue-500 text-white py-1 px-2 rounded hover:bg-blue-600 transition-colors">
+                <button className="w-full bg-blue-500 text-white py-1 px-2 rounded hover:bg-blue-600 transition-colors">
+                  <Link
+                    href={slots.url}
+                    target={slots.targetBlank ? '_blank' : '_self'}
+                    className="block w-full"
+                  >
                     Play Now
-                  </button>
-                </Link>
+                  </Link>
+                </button>
               </div>
             </div>
           ))}

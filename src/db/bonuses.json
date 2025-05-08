@@ -2,377 +2,131 @@
     {
         "id": 1,
         "casinoId": "jackpot Lounge",
-        "name": "Bonus",
-        "description": "This is the first bonus.",
-        "type": "Type A",
-        "value": 10,
-        "duration": 5,
+        "bonus_type": "",
+        "deposit": "",
         "image": "/jackpot-L-bonus.jpg",
-        "url": "https://jackpotlounge.com/",
+        "url": "",
         "targetBlank": "true",
-        "expiryDate": "{{expiryDate}}",
-        "features": [
-            "/jl_welcome-offer_goldblitz_desktop_v2.jpg",
-            "Feature 2",
-            "Feature 3"
-        ],
-        "casinoInfo": {
-            "currentBonus": {
-                "title": "Welcome Bonus",
-                "description": "100% match bonus up to $200",
-                "expiryDate": "December 31, 2023"
-            },
-            "upcomingEvents": [
-                {
-                    "title": "Weekly Tournament",
-                    "date": "Every Friday"
-                },
-                {
-                    "title": "Monthly Raffle",
-                    "date": "Last Saturday of the month"
-                }
-            ],
-            "features": [
-                "Live Chat Support",
-                "Mobile App",
-                "Daily Promotions"
-            ]
-        },
-        "terms": [
-            {
-                "title": "Terms and Conditions",
-                "description": "These are the terms and conditions for Bonus 1.",
-                "url": "https://example.com/terms-bonus1"
-            }
-        ]
+        "expiryDate": ""
     },
     {
         "id": 2,
         "casinoId": "name_of_casino",
-        "name": "Bonus 2",
-        "description": "This is the second bonus.",
-        "type": "Type B",
-        "value": 20,
-        "duration": 10,
+        "bonus_type": "",
+        "deposit": "",
         "image": "/NestEgg.jpg",
-        "url": "https://example.com/bonus2",
+        "url": "",
         "targetBlank": "true",
-        "expiryDate": "{{expiryDate}}",
-        "features": [
-            "Feature 1",
-            "Feature 2",
-            "Feature 3"
-        ],
-        "casinoInfo": {
-            "currentBonus": {
-                "title": "Welcome Bonus",
-                "description": "100% match bonus up to $200",
-                "expiryDate": "December 31, 2023"
-            },
-            "upcomingEvents": [
-                {
-                    "title": "Weekly Tournament",
-                    "date": "Every Friday"
-                },
-                {
-                    "title": "Monthly Raffle",
-                    "date": "Last Saturday of the month"
-                }
-            ],
-            "features": [
-                "Live Chat Support",
-                "Mobile App",
-                "Daily Promotions"
-            ]
-        },
-        "terms": [
-            {
-                "title": "Terms and Conditions",
-                "description": "These are the terms and conditions for Bonus 2.",
-                "url": "https://example.com/terms-bonus2"
-            }
-        ]
+        "expiryDate": ""
     },
     {
         "id": 3,
         "casinoId": "name_of_casino",
-        "name": "Bonus 3",
-        "description": "This is the third bonus.",
-        "type": "Type C",
-        "value": 30,
-        "duration": 15,
+        "bonus_type": "",
+        "deposit": "",
         "image": "/NestEgg.jpg",
-        "url": "https://example.com/bonus3",
+        "url": "",
         "targetBlank": "true",
-        "expiryDate": "{{expiryDate}}",
-        "features": [
-            "Feature 1",
-            "Feature 2",
-            "Feature 3"
-        ],
-        "casinoInfo": {
-            "currentBonus": {
-                "title": "Welcome Bonus",
-                "description": "100% match bonus up to $200",
-                "expiryDate": "December 31, 2023"
-            },
-            "upcomingEvents": [
-                {
-                    "title": "Weekly Tournament",
-                    "date": "Every Friday"
-                },
-                {
-                    "title": "Monthly Raffle",
-                    "date": "Last Saturday of the month"
-                }
-            ],
-            "features": [
-                "Live Chat Support",
-                "Mobile App",
-                "Daily Promotions"
-            ]
-        },
-        "terms": [
-            {
-                "title": "Terms and Conditions",
-                "description": "These are the terms and conditions for Bonus 3.",
-                "url": "https://example.com/terms-bonus3"
-            }
-        ]
+        "expiryDate": ""
     },
     {
         "id": 4,
         "casinoId": "name_of_casino",
-        "name": "Bonus 4",
-        "description": "This is the fourth bonus.",
-        "type": "Type D",
-        "value": 40,
-        "duration": 20,
+        "bonus_type": "",
+        "deposit": "",
         "image": "/NestEgg.jpg",
-        "url": "https://example.com/bonus4",
+        "url": "",
         "targetBlank": "true",
-        "expiryDate": "{{expiryDate}",
-        "features": [
-            "Feature 1",
-            "Feature 2",
-            "Feature 3"
-        ],
-        "casinoInfo": {
-            "currentBonus": {
-                "title": "Welcome Bonus",
-                "description": "100% match bonus up to $200",
-                "expiryDate": "December 31, 2023"
-            },
-            "upcomingEvents": [
-                {
-                    "title": "Weekly Tournament",
-                    "date": "Every Friday"
-                },
-                {
-                    "title": "Monthly Raffle",
-                    "date": "Last Saturday of the month"
-                }
-            ],
-            "features": [
-                "Live Chat Support",
-                "Mobile App",
-                "Daily Promotions"
-            ]
-        },
-        "terms": [
-            {
-                "title": "Terms and Conditions",
-                "description": "These are the terms and conditions for Bonus 4.",
-                "url": "https://example.com/terms-bonus4"
-            }
-        ]
+        "expiryDate": ""
     },
     {
         "id": 5,
         "casinoId": "name_of_casino",
-        "name": "Bonus 5",
-        "description": "This is the fifth bonus.",
-        "type": "Type E",
-        "value": 50,
-        "duration": 25,
+        "bonus_type": "",
+        "deposit": "",
         "image": "/NestEgg.jpg",
-        "url": "https://example.com/bonus5",
+        "url": "",
         "targetBlank": "true",
-        "expiryDate": "{{expiryDate}}",
-        "features": [
-            "Feature 1",
-            "Feature 2",
-            "Feature 3"
-        ],
-        "casinoInfo": {
-            "currentBonus": {
-                "title": "Welcome Bonus",
-                "description": "100% match bonus up to $200",
-                "expiryDate": "December 31, 2023"
-            },
-            "upcomingEvents": [
-                {
-                    "title": "Weekly Tournament",
-                    "date": "Every Friday"
-                },
-                {
-                    "title": "Monthly Raffle",
-                    "date": "Last Saturday of the month"
-                }
-            ],
-            "features": [
-                "Live Chat Support",
-                "Mobile App",
-                "Daily Promotions"
-            ]
-        },
-        "terms": [
-            {
-                "title": "Terms and Conditions",
-                "description": "These are the terms and conditions for Bonus 5.",
-                "url": "https://example.com/terms-bonus5"
-            }
-        ]
+        "expiryDate": ""
     },
     {
         "id": 6,
         "casinoId": "name_of_casino",
-        "name": "Bonus 6",
-        "description": "This is the sixth bonus.",
-        "type": "Type F",
-        "value": 60,
-        "duration": 30,
+        "bonus_type": "",
+        "deposit": "",
         "image": "/NestEgg.jpg",
-        "url": "https://example.com/bonus6",
+        "url": "",
         "targetBlank": "true",
-        "expiryDate": "{{expiryDate}}",
-        "features": [
-            "Feature 1",
-            "Feature 2",
-            "Feature 3"
-        ],
-        "casinoInfo": {
-            "currentBonus": {
-                "title": "Welcome Bonus",
-                "description": "100% match bonus up to $200",
-                "expiryDate": "December 31, 2023"
-            },
-            "upcomingEvents": [
-                {
-                    "title": "Weekly Tournament",
-                    "date": "Every Friday"
-                },
-                {
-                    "title": "Monthly Raffle",
-                    "date": "Last Saturday of the month"
-                }
-            ],
-            "features": [
-                "Live Chat Support",
-                "Mobile App",
-                "Daily Promotions"
-            ]
-        },
-        "terms": [
-            {
-                "title": "Terms and Conditions",
-                "description": "These are the terms and conditions for Bonus 6.",
-                "url": "https://example.com/terms-bonus6"
-            }
-        ]
+        "expiryDate": ""
     },
     {
         "id": 7,
         "casinoId": "name_of_casino",
-        "name": "Bonus 7",
-        "description": "This is the seventh bonus.",
-        "type": "Type G",
-        "value": 70,
-        "duration": 35,
+        "bonus_type": "",
+        "deposit": "",
         "image": "/NestEgg.jpg",
-        "url": "https://example.com/bonus7",
+        "url": "",
         "targetBlank": "true",
-        "expiryDate": "{{expiryDate}}",
-        "features": [
-            "Feature 1",
-            "Feature 2",
-            "Feature 3"
-        ],
-        "casinoInfo": {
-            "currentBonus": {
-                "title": "Welcome Bonus",
-                "description": "100% match bonus up to $200",
-                "expiryDate": "December 31, 2023"
-            },
-            "upcomingEvents": [
-                {
-                    "title": "Weekly Tournament",
-                    "date": "Every Friday"
-                },
-                {
-                    "title": "Monthly Raffle",
-                    "date": "Last Saturday of the month"
-                }
-            ],
-            "features": [
-                "Live Chat Support",
-                "Mobile App",
-                "Daily Promotions"
-            ]
-        },
-        "terms": [
-            {
-                "title": "Terms and Conditions",
-                "description": "These are the terms and conditions for Bonus 7.",
-                "url": "https://example.com/terms-bonus7"
-            }
-        ]
+        "expiryDate": ""
     },
     {
         "id": 8,
         "casinoId": "name_of_casino",
-        "name": "Bonus 8",
-        "description": "This is the eighth bonus.",
-        "type": "Type H",
-        "value": 80,
-        "duration": 40,
+        "bonus_type": "",
+        "deposit": "",
         "image": "/NestEgg.jpg",
-        "url": "https://example.com/bonus8",
+        "url": "",
         "targetBlank": "true",
-        "expiryDate": "{{expiryDate}}",
-        "features": [
-            "Feature 1",
-            "Feature 2",
-            "Feature 3"
-        ],
-        "casinoInfo": {
-            "currentBonus": {
-                "title": "Welcome Bonus",
-                "description": "100% match bonus up to $200",
-                "expiryDate": "December 31, 2023"
-            },
-            "upcomingEvents": [
-                {
-                    "title": "Weekly Tournament",
-                    "date": "Every Friday"
-                },
-                {
-                    "title": "Monthly Raffle",
-                    "date": "Last Saturday of the month"
-                }
-            ],
-            "features": [
-                "Live Chat Support",
-                "Mobile App",
-                "Daily Promotions"
-            ]
-        },
-        "terms": [
-            {
-                "title": "Terms and Conditions",
-                "description": "These are the terms and conditions for Bonus 8.",
-                "url": "https://example.com/terms-bonus8"
-            }
-        ]
+        "expiryDate": ""
+    },
+    {
+        "id": 9,
+        "casinoId": "name_of_casino",
+        "bonus_type": "",
+        "deposit": "",
+        "image": "/NestEgg.jpg",
+        "url": "",
+        "targetBlank": "true",
+        "expiryDate": ""
+    },
+    {
+        "id": 10,
+        "casinoId": "name_of_casino",
+        "bonus_type": "",
+        "deposit": "",
+        "image": "/NestEgg.jpg",
+        "url": "0",
+        "targetBlank": "true",
+        "expiryDate": ""
+    },
+    {
+        "id": 11,
+        "casinoId": "name_of_casino",
+        "bonus_type": "",
+        "deposit": "",
+        "image": "/NestEgg.jpg",
+        "url": "1",
+        "targetBlank": "true",
+        "expiryDate": ""
+    },
+    {
+        "id": 12,
+        "casinoId": "name_of_casino",
+        "bonus_type": "",
+        "deposit": "",
+        "image": "/NestEgg.jpg",
+        "url": "2",
+        "targetBlank": "true",
+        "expiryDate": ""
+    },
+    {
+        "id": 13,
+        "casinoId": "name_of_casino",
+        "bonus_type": "",
+        "deposit": "",
+        "image": "/NestEgg.jpg",
+        "url": "3",
+        "targetBlank": "true",
+        "expiryDate": ""
     }
 ]
