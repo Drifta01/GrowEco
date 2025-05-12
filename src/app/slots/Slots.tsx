@@ -1,45 +1,56 @@
 'use client';
 
-import React, { useState } from 'react';
 import Image from 'next/image';
 import slots from '@/db/slots.json';
 import Link from 'next/link';
+import { SlotData } from '@/types/games';
+import React from 'react';
 
 export const Slots = () => {
   return (
-    <div className="flex-grow bg-gray-50 py-8">
+    <div className="flex-grow bg-gray-200 py-8">
       <div className="container mx-auto px-0">
         <h1 className="text-lg font-semibold mb-8">Online Slots</h1>
-        <div className="mx-8 grid grid-cols-1 md:grid-cols-4 lg:grid-cols-6 gap-8">
-          {slots.map((slots) => (
+        <div className="mx-8 grid grid-cols-2  md:grid-cols-4 lg:grid-cols-6 gap-6">
+          {slots.map((slot) => (
             <div
-              key={slots.id}
-              className="flex flex-col h-full bg-white rounded-lg hover:shadow-xl hover:shadow-slate-900 transition-shadow"
+              key={slot.id || slot.name}
+              className="flex flex-col h-3/4 bg-white rounded-lg hover:shadow-xl hover:shadow-slate-900 transition-shadow overflow-hidden"
             >
-              <div className="flex justify-center items-center p-4 h-24">
-                <Image
-                  src={slots.image}
-                  alt={slots.name}
-                  width={120}
-                  height={120}
-                  className="object-contain"
-                />
+              <div className="flex-grow flex flex-col items-center">
+                {/* Link wraps just the image */}
+                <Link
+                  href={slot.url || 'https://example.com'}
+                  target={slot.targetBlank ? '_blank' : '_self'}
+                  className="block w-full"
+                >
+                  <div className="flex justify-center items-center p-0 h-36">
+                    <Image
+                      src={slot.image || '/images/slots/placeholder.jpg'}
+                      alt={slot.name || 'Slot game'}
+                      width={120}
+                      height={120}
+                      className="object-contain  hover:scale-110 transition-transform duration-300"
+                    />
+                  </div>
+                </Link>
+
+                <div className="p-6 mb-12 text-center">
+                  <h3 className="text-black font-bold px-0">{slot.name}</h3>
+                  {slot.provider && (
+                    <p className="hidden text-sm text-gray-600 mt-1">
+                      by {slot.provider}
+                    </p>
+                  )}
+                </div>
               </div>
 
-              <div className="p-0 text-center flex-grow">
-                <h3 className="font-semibold text-lg mb-2">{slots.name}</h3>
-              </div>
-
-              <div className="mt-0 p-0">
-                <button className="w-full bg-blue-500 text-white py-1 px-2 rounded hover:bg-blue-600 transition-colors">
-                  <Link
-                    href={slots.url}
-                    target={slots.targetBlank ? '_blank' : '_self'}
-                    className="block w-full"
-                  >
-                    Play Now
-                  </Link>
-                </button>
+              <div className="px-4 pb-4 mt-auto">
+                <Link
+                  href={slot.url || 'https://example.com'}
+                  target={slot.targetBlank ? '_blank' : '_self'}
+                  className=""
+                ></Link>
               </div>
             </div>
           ))}

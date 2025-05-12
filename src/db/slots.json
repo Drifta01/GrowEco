@@ -1,319 +1,590 @@
 [
     {
         "id": 1,
-        "name": "Vegas Palms Casino",
-        "location": "Location A",
-        "games": [
-            "Game 1",
-            "Game 2",
-            "Game 3"
+        "name": "Lucky Twins",
+        "description": "9 reels of fortune with Asian theme",
+        "image": "/luckyTwins.jpg",
+        "provider": "Microgaming",
+        "url": "https://example.com/play/lucky-twins",
+        "category": [
+            "Popular",
+            "Asian"
         ],
-        "rating": 4.5,
-        "image": "/jane-blonde.webp",
-        "url": "https://secure.vegaspalmscasino.com/premium/casino/for-you/For%20You",
-        "targetBlank": true,
-        "casinoInfo": {
-            "currentBonus": {
-                "title": "200% Welcome Bonus",
-                "description": "Get up to $100 on your first deposit",
-                "expiryDate": "June 30, 2025"
-            },
-            "upcomingEvents": [
-                {
-                    "title": "Weekly Slot Tournament",
-                    "date": "Every Friday"
-                },
-                {
-                    "title": "VIP Summer Party",
-                    "date": "July 15, 2025"
-                }
-            ],
-            "features": [
-                "Live Dealers",
-                "Mobile App",
-                "24/7 Support",
-                "Fast Withdrawals"
-            ]
-        }
+        "rtp": 95.4,
+        "targetBlank": true
     },
     {
         "id": 2,
-        "name": "Platinum Play Casino",
-        "location": "Location B",
-        "games": [
-            "Game 4",
-            "Game 5",
-            "Game 6"
+        "name": "Nest Egg",
+        "description": "5 reels and 10 paylines of ancient Egyptian adventure",
+        "image": "/NestEgg.jpg",
+        "provider": "Play'n GO",
+        "url": "https://example.com/play/book-of-dead",
+        "category": [
+            "Popular",
+            "Adventure"
         ],
-        "rating": 4.0,
-        "image": "/hermes.webp",
-        "url": "https://secure.platinumplaycasino.com/premium/casino/for-you/For%20You",
-        "targetBlank": true,
-        "casinoInfo": {
-            "currentBonus": {
-                "title": "100% Welcome Bonus",
-                "description": "50% Match Bonus up to $200",
-                "expiryDate": "May 31, 2025"
-            },
-            "upcomingEvents": [
-                {
-                    "title": "",
-                    "date": ""
-                },
-                {
-                    "title": "Weekend Cashback",
-                    "date": "Every Saturday-Sunday"
-                }
-            ],
-            "features": [
-                "Progressive Jackpots",
-                "Loyalty Program",
-                "Weekly Promotions",
-                "Crypto Payments"
-            ]
-        }
+        "rtp": 96.2,
+        "targetBlank": true
     },
     {
         "id": 3,
-        "name": "Jackpot lounge",
-        "location": "https://jackpotlounge.com/",
-        "games": [
-            "",
-            "Game 8",
-            "Game 9"
+        "name": "Pinky",
+        "description": "5 reels of cosmic jewels with both-ways wins",
+        "image": "/pinky.png",
+        "provider": "NetEnt",
+        "url": "https://example.com/play/starburst",
+        "category": [
+            "Popular",
+            "Classic"
         ],
-        "rating": 3.5,
-        "image": "/jackpot-L-bonus.jpg",
-        "url": "https://example.com/casino-c",
-        "targetBlank": true,
-        "casinoInfo": {
-            "currentBonus": {
-                "title": "No Deposit Bonus",
-                "description": "20 free spins just for signing up",
-                "expiryDate": "Limited time offer"
-            },
-            "upcomingEvents": [
-                {
-                    "title": "Blackjack Tournament",
-                    "date": "June 5-7, 2025"
-                }
-            ],
-            "features": [
-                "Instant Play",
-                "Mobile Friendly",
-                "Weekend Cashback",
-                "VIP Program"
-            ]
-        }
+        "rtp": 96.1,
+        "targetBlank": true
     },
     {
         "id": 4,
-        "name": "Casino D",
-        "location": "Location D",
-        "games": [
-            "Game 10",
-            "Game 11",
-            "Game 12"
+        "name": "Agent Jane Blonde Returns",
+        "description": "Adventure slot with avalanche mechanics",
+        "image": "/jane-blonde.webp",
+        "provider": "NetEnt",
+        "url": "https://example.com/play/gonzos-quest",
+        "category": [
+            "Adventure",
+            "Popular"
         ],
-        "rating": 4.2,
-        "image": "/hermes.webp",
-        "url": "https://example.com/casino-d",
-        "targetBlank": true,
-        "casinoInfo": {
-            "currentBonus": {
-                "title": "Triple Welcome Package",
-                "description": "Up to $1500 on your first three deposits",
-                "expiryDate": "Ongoing"
-            },
-            "upcomingEvents": [
-                {
-                    "title": "Slot Championship",
-                    "date": "May 20-27, 2025"
-                },
-                {
-                    "title": "Live Casino Weekend",
-                    "date": "Last weekend of each month"
-                }
-            ],
-            "features": [
-                "1000+ Games",
-                "Fast Payouts",
-                "Multi-language Support",
-                "24/7 Live Chat"
-            ]
-        }
+        "rtp": 95.97,
+        "targetBlank": true
     },
     {
         "id": 5,
-        "name": "Casino E",
-        "location": "Location E",
-        "games": [
-            "Game 13",
-            "Game 14",
-            "Game 15"
+        "name": "Alien Eggstractors",
+        "description": "Progressive jackpot slot with African safari theme",
+        "image": "/alieneggstractors.jpg",
+        "provider": "Microgaming",
+        "url": "https://example.com/play/mega-moolah",
+        "category": [
+            "Jackpot",
+            "Popular"
         ],
-        "rating": 3.8,
-        "image": "/jane-blonde.webp",
-        "url": "https://example.com/casino-e",
-        "targetBlank": true,
-        "casinoInfo": {
-            "currentBonus": {
-                "title": "50% Reload Bonus",
-                "description": "Every Monday, up to $200",
-                "expiryDate": "Recurring weekly"
-            },
-            "upcomingEvents": [
-                {
-                    "title": "Mystery Bonus Day",
-                    "date": "Every Thursday"
-                }
-            ],
-            "features": [
-                "Exclusive Games",
-                "Weekly Cashback",
-                "Personalized Offers",
-                "Tournaments"
-            ]
-        }
+        "rtp": 93.42,
+        "targetBlank": true
     },
     {
         "id": 6,
-        "name": "Casino F",
-        "location": "Location F",
-        "games": [
-            "Game 16",
-            "Game 17",
-            "Game 18"
+        "name": "Big Bad Wolf",
+        "description": "5 reels with wild American wilderness theme",
+        "image": "/bigbadwolf.jpg",
+        "provider": "Pragmatic Play",
+        "url": "https://example.com/play/wolf-gold",
+        "category": [
+            "Animals",
+            "Nature"
         ],
-        "rating": 4.1,
-        "image": "/jane-blonde.webp",
-        "url": "https://example.com/casino-f",
-        "targetBlank": true,
-        "casinoInfo": {
-            "currentBonus": {
-                "title": "Free Spins Weekend",
-                "description": "100 free spins on Starburst",
-                "expiryDate": "This weekend only"
-            },
-            "upcomingEvents": [
-                {
-                    "title": "Summer Festival",
-                    "date": "June 1-30, 2025"
-                },
-                {
-                    "title": "New Game Release Party",
-                    "date": "May 15, 2025"
-                }
-            ],
-            "features": [
-                "Mobile App",
-                "Quick Registration",
-                "Fast Withdrawals",
-                "Weekend Promotions"
-            ]
-        }
+        "rtp": 96.01,
+        "targetBlank": true
     },
     {
         "id": 7,
-        "name": "Casino G",
-        "location": "Location G",
-        "games": [
-            "Game 19",
-            "Game 20",
-            "Game 21"
+        "name": "break the piggybank",
+        "description": "5 reels of Wild West action with high volatility",
+        "image": "/breakthepiggybank.jpg",
+        "provider": "NetEnt",
+        "url": "https://example.com/play/dead-or-alive-2",
+        "category": [
+            "Western",
+            "High Volatility"
         ],
-        "rating": 3.9,
-        "image": "/LuckyTwins.jpg",
-        "url": "https://example.com/casino-g",
-        "targetBlank": true,
-        "casinoInfo": {
-            "currentBonus": {
-                "title": "VIP Welcome Offer",
-                "description": "200% bonus + 100 free spins",
-                "expiryDate": "June 10, 2025"
-            },
-            "upcomingEvents": [
-                {
-                    "title": "Prize Drop Week",
-                    "date": "May 22-29, 2025"
-                }
-            ],
-            "features": [
-                "Live Dealers",
-                "Sportsbook",
-                "Crypto Payments",
-                "Loyalty Rewards"
-            ]
-        }
+        "rtp": 96.8,
+        "targetBlank": true
     },
     {
         "id": 8,
-        "name": "Casino H",
-        "location": "Location H",
-        "games": [
-            "Game 22",
-            "Game 23",
-            "Game 24"
+        "name": "Cozy Candy",
+        "description": "6 reels of candy-themed fun with tumbling reels",
+        "image": "/cozycandy.jpg",
+        "provider": "Pragmatic Play",
+        "url": "https://example.com/play/sweet-bonanza",
+        "category": [
+            "Food",
+            "Tumbling Reels"
         ],
-        "rating": 4.3,
-        "image": "/NestEgg.jpg",
-        "url": "https://example.com/casino-h",
-        "targetBlank": true,
-        "casinoInfo": {
-            "currentBonus": {
-                "title": "Birthday Bonus",
-                "description": "Special gift on your birthday",
-                "expiryDate": "Ongoing"
-            },
-            "upcomingEvents": [
-                {
-                    "title": "May Madness Promotion",
-                    "date": "All throughout May"
-                },
-                {
-                    "title": "Live Casino Tournament",
-                    "date": "June 3-5, 2025"
-                }
-            ],
-            "features": [
-                "No Wagering Requirements",
-                "Instant Withdrawals",
-                "Game Shows",
-                "Regular Promotions"
-            ]
-        }
+        "rtp": 96.48,
+        "targetBlank": true
     },
     {
         "id": 9,
-        "name": "Casino I",
-        "location": "Location I",
-        "games": [
-            "Game 25",
-            "Game 26",
-            "Game 27"
+        "name": "Frkn Bananas",
+        "description": "Fishing-themed slot with money collect feature",
+        "image": "/frknbananas.jpg",
+        "provider": "Pragmatic Play",
+        "url": "https://www.wildz.com/nz/play/frkn-bananas/",
+        "category": [
+            "Fishing",
+            "Collection"
         ],
-        "rating": 4.0,
-        "image": "/LuckyTwins.jpg",
-        "url": "https://example.com/casino-i",
-        "targetBlank": true,
-        "casinoInfo": {
-            "currentBonus": {
-                "title": "Refer a Friend Bonus",
-                "description": "$50 for each friend you refer",
-                "expiryDate": "Ongoing"
-            },
-            "upcomingEvents": [
-                {
-                    "title": "",
-                    "date": ""
-                }
-            ],
-            "features": [
-                "Exclusive VIP Club",
-                "Daily Promotions",
-                "Mobile Friendly",
-                "24/7 Customer Support"
-            ]
-        }
+        "rtp": 96.71,
+        "targetBlank": true
+    },
+    {
+        "id": 10,
+        "name": "Fighter Pit",
+        "description": "Greek mythology themed slot with cascading wins",
+        "image": "/fighterpit.jpg",
+        "provider": "Pragmatic Play",
+        "url": "https://example.com/play/gates-of-olympus",
+        "category": [
+            "Mythology",
+            "Cascading"
+        ],
+        "rtp": 96.5,
+        "targetBlank": true
+    },
+    {
+        "id": 11,
+        "name": "Gallina Harvest",
+        "description": "Alien-themed grid slot with cascading symbols",
+        "image": "/gallinaharvest.jpg",
+        "provider": "Play'n GO",
+        "url": "https://example.com/play/reactoonz",
+        "category": [
+            "Grid",
+            "Sci-Fi"
+        ],
+        "rtp": 96.51,
+        "targetBlank": true
+    },
+    {
+        "id": 12,
+        "name": "Gods of Troy",
+        "description": "Magic-themed slot with expanding symbols",
+        "image": "/godsoftroy.jpg",
+        "provider": "Play'n GO",
+        "url": "https://example.com/play/rise-of-merlin",
+        "category": [
+            "Magic",
+            "Fantasy"
+        ],
+        "rtp": 96.58,
+        "targetBlank": true
+    },
+    {
+        "id": 13,
+        "name": "Hermes Bonanza",
+        "description": "Wildlife-themed slot with 4096 ways to win",
+        "image": "/hermes.webp",
+        "provider": "Pragmatic Play",
+        "url": "https://example.com/play/buffalo-king",
+        "category": [
+            "Animals",
+            "Ways to Win"
+        ],
+        "rtp": 96.06,
+        "targetBlank": true
+    },
+    {
+        "id": 14,
+        "name": "3 Magic Pots",
+        "description": "Vampire-themed slot with 243 ways to win",
+        "image": "/magicpots.jpg",
+        "provider": "Microgaming",
+        "url": "https://example.com/play/immortal-romance",
+        "category": [
+            "Fantasy",
+            "Ways to Win"
+        ],
+        "rtp": 96.86,
+        "targetBlank": true
+    },
+    {
+        "id": 15,
+        "name": "Majestic Fury",
+        "description": "Progressive jackpot with ancient Greek mythology",
+        "image": "/majesticfury.jpg",
+        "provider": "NetEnt",
+        "url": "https://example.com/play/divine-fortune",
+        "category": [
+            "Jackpot",
+            "Mythology"
+        ],
+        "rtp": 96.59,
+        "targetBlank": true
+    },
+    {
+        "id": 16,
+        "name": "Jammin' Jars",
+        "description": "8x8 grid slot with cluster pays and giant fruits",
+        "image": "",
+        "provider": "Push Gaming",
+        "url": "https://example.com/play/jammin-jars",
+        "category": [
+            "Grid",
+            "Cluster Pays"
+        ],
+        "rtp": 96.83,
+        "targetBlank": true
+    },
+    {
+        "id": 17,
+        "name": "Legacy of Dead",
+        "description": "Ancient Egyptian themed with expanding symbols",
+        "image": "/i",
+        "provider": "Play'n GO",
+        "url": "https://example.com/play/legacy-of-dead",
+        "category": [
+            "Ancient Egypt",
+            "High Volatility"
+        ],
+        "rtp": 96.58,
+        "targetBlank": true
+    },
+    {
+        "id": 18,
+        "name": "Viking Runecraft",
+        "description": "Norse mythology on a 7x7 grid with cascading wins",
+        "image": "/ima",
+        "provider": "Play'n GO",
+        "url": "https://example.com/play/viking-runecraft",
+        "category": [
+            "Norse",
+            "Grid"
+        ],
+        "rtp": 96.7,
+        "targetBlank": true
+    },
+    {
+        "id": 19,
+        "name": "Extra Chilli",
+        "description": "Mexican-themed slot with megaways mechanics",
+        "image": "",
+        "provider": "Big Time Gaming",
+        "url": "https://example.com/play/extra-chilli",
+        "category": [
+            "Megaways",
+            "Food"
+        ],
+        "rtp": 96.82,
+        "targetBlank": true
+    },
+    {
+        "id": 20,
+        "name": "Fishin' Frenzy",
+        "description": "Fishing themed slot with free spins and catch feature",
+        "image": "/",
+        "provider": "Blueprint Gaming",
+        "url": "https://example.com/play/fishin-frenzy",
+        "category": [
+            "Fishing",
+            "Classic"
+        ],
+        "rtp": 96.12,
+        "targetBlank": true
+    },
+    {
+        "id": 21,
+        "name": "9 Masks of Fire",
+        "description": "African themed slot with jackpot wheel",
+        "image": "/im",
+        "provider": "Gameburger Studios",
+        "url": "https://example.com/play/9-masks-of-fire",
+        "category": [
+            "African",
+            "Jackpot"
+        ],
+        "rtp": 96.24,
+        "targetBlank": true
+    },
+    {
+        "id": 22,
+        "name": "Money Train 2",
+        "description": "Western-themed with respin feature and multipliers",
+        "image": "/",
+        "provider": "Relax Gaming",
+        "url": "https://example.com/play/money-train-2",
+        "category": [
+            "Western",
+            "High Volatility"
+        ],
+        "rtp": 96.4,
+        "targetBlank": true
+    },
+    {
+        "id": 23,
+        "name": "Fruit Party",
+        "description": "Colorful fruit-themed slot with cluster pays",
+        "image": "",
+        "provider": "Pragmatic Play",
+        "url": "https://example.com/play/fruit-party",
+        "category": [
+            "Fruit",
+            "Cluster Pays"
+        ],
+        "rtp": 96.5,
+        "targetBlank": true
+    },
+    {
+        "id": 24,
+        "name": "Book of Ra Deluxe",
+        "description": "Egyptian adventure with expanding symbols",
+        "image": "/imag",
+        "provider": "Novomatic",
+        "url": "https://example.com/play/book-of-ra-deluxe",
+        "category": [
+            "Ancient Egypt",
+            "Classic"
+        ],
+        "rtp": 95.1,
+        "targetBlank": true
+    },
+    {
+        "id": 25,
+        "name": "Thunderstruck II",
+        "description": "Norse mythology themed with 243 ways to win",
+        "image": "/ima",
+        "provider": "Microgaming",
+        "url": "https://example.com/play/thunderstruck-ii",
+        "category": [
+            "Norse",
+            "Ways to Win"
+        ],
+        "rtp": 96.65,
+        "targetBlank": true
+    },
+    {
+        "id": 26,
+        "name": "Bonanza",
+        "description": "Mining themed megaways slot with reactions",
+        "image": "",
+        "provider": "Big Time Gaming",
+        "url": "https://example.com/play/bonanza",
+        "category": [
+            "Megaways",
+            "Mining"
+        ],
+        "rtp": 96.0,
+        "targetBlank": true
+    },
+    {
+        "id": 27,
+        "name": "Hot Fruits 100",
+        "description": "Classic fruit machine with 100 paylines",
+        "image": "/i",
+        "provider": "Amatic",
+        "url": "https://example.com/play/hot-fruits-100",
+        "category": [
+            "Fruit",
+            "Classic"
+        ],
+        "rtp": 96.0,
+        "targetBlank": true
+    },
+    {
+        "id": 28,
+        "name": "Fire Joker",
+        "description": "Classic 3x3 slot with respins and multiplier wheel",
+        "image": "",
+        "provider": "Play'n GO",
+        "url": "https://example.com/play/fire-joker",
+        "category": [
+            "Classic",
+            "Joker"
+        ],
+        "rtp": 96.15,
+        "targetBlank": true
+    },
+    {
+        "id": 29,
+        "name": "Wild West Gold",
+        "description": "Western-themed slot with wild multipliers",
+        "image": "/i",
+        "provider": "Pragmatic Play",
+        "url": "https://example.com/play/wild-west-gold",
+        "category": [
+            "Western",
+            "Multipliers"
+        ],
+        "rtp": 96.51,
+        "targetBlank": true
+    },
+    {
+        "id": 30,
+        "name": "Great Rhino Megaways",
+        "description": "African wildlife with up to 200,704 ways to win",
+        "image": "/images/",
+        "provider": "Pragmatic Play",
+        "url": "https://example.com/play/great-rhino-megaways",
+        "category": [
+            "Animals",
+            "Megaways"
+        ],
+        "rtp": 96.58,
+        "targetBlank": true
+    },
+    {
+        "id": 31,
+        "name": "Rainbow Riches",
+        "description": "Irish-themed slot with rainbow bonuses",
+        "image": "/i",
+        "provider": "Barcrest",
+        "url": "https://example.com/play/rainbow-riches",
+        "category": [
+            "Irish",
+            "Classic"
+        ],
+        "rtp": 95.0,
+        "targetBlank": true
+    },
+    {
+        "id": 32,
+        "name": "Twin Spin",
+        "description": "Classic slot with linked reels feature",
+        "image": "",
+        "provider": "NetEnt",
+        "url": "https://example.com/play/twin-spin",
+        "category": [
+            "Classic",
+            "Linked Reels"
+        ],
+        "rtp": 96.55,
+        "targetBlank": true
+    },
+    {
+        "id": 33,
+        "name": "Sakura Fortune",
+        "description": "Japanese-themed slot with respins and wilds",
+        "image": "/i",
+        "provider": "Quickspin",
+        "url": "https://example.com/play/sakura-fortune",
+        "category": [
+            "Asian",
+            "Respins"
+        ],
+        "rtp": 96.58,
+        "targetBlank": true
+    },
+    {
+        "id": 34,
+        "name": "Wolf Hunters",
+        "description": "Gothic horror slot with werewolf theme",
+        "image": "",
+        "provider": "Yggdrasil",
+        "url": "https://example.com/play/wolf-hunters",
+        "category": [
+            "Horror",
+            "Fantasy"
+        ],
+        "rtp": 96.3,
+        "targetBlank": true
+    },
+    {
+        "id": 35,
+        "name": "Rich Wilde and the Tome of Madness",
+        "description": "Grid slot with cascading symbols and Cthulhu theme",
+        "image": "/im",
+        "provider": "Play'n GO",
+        "url": "https://example.com/play/tome-of-madness",
+        "category": [
+            "Grid",
+            "Adventure"
+        ],
+        "rtp": 96.59,
+        "targetBlank": true
+    },
+    {
+        "id": 36,
+        "name": "Eye of Horus",
+        "description": "Egyptian mythology with expanding wilds",
+        "image": "",
+        "provider": "Blueprint Gaming",
+        "url": "https://example.com/play/eye-of-horus",
+        "category": [
+            "Ancient Egypt",
+            "Classic"
+        ],
+        "rtp": 96.31,
+        "targetBlank": true
+    },
+    {
+        "id": 37,
+        "name": "Dragon's Fire",
+        "description": "Dragon-themed slot with progressive multipliers",
+        "image": "",
+        "provider": "Red Tiger",
+        "url": "https://example.com/play/dragons-fire",
+        "category": [
+            "Fantasy",
+            "Dragons"
+        ],
+        "rtp": 96.07,
+        "targetBlank": true
+    },
+    {
+        "id": 38,
+        "name": "Buffalo Blitz",
+        "description": "Wildlife themed with 4096 ways to win",
+        "image": "/",
+        "provider": "Playtech",
+        "url": "https://example.com/play/buffalo-blitz",
+        "category": [
+            "Animals",
+            "Ways to Win"
+        ],
+        "rtp": 95.96,
+        "targetBlank": true
+    },
+    {
+        "id": 39,
+        "name": "Golden Ticket",
+        "description": "Circus themed grid slot with cascading wins",
+        "image": "/",
+        "provider": "Play'n GO",
+        "url": "https://example.com/play/golden-ticket",
+        "category": [
+            "Circus",
+            "Grid"
+        ],
+        "rtp": 96.73,
+        "targetBlank": true
+    },
+    {
+        "id": 40,
+        "name": "Diamond Strike",
+        "description": "Classic jewel themed slot with jackpot feature",
+        "image": "/i",
+        "provider": "Pragmatic Play",
+        "url": "https://example.com/play/diamond-strike",
+        "category": [
+            "Classic",
+            "Gems"
+        ],
+        "rtp": 96.48,
+        "targetBlank": true
+    },
+    {
+        "id": 41,
+        "name": "Monopoly Megaways",
+        "description": "Board game themed slot with megaways mechanics",
+        "image": "/imag",
+        "provider": "Big Time Gaming",
+        "url": "https://example.com/play/monopoly-megaways",
+        "category": [
+            "Board Games",
+            "Megaways"
+        ],
+        "rtp": 96.39,
+        "targetBlank": true
+    },
+    {
+        "id": 42,
+        "name": "White Rabbit",
+        "description": "Alice in Wonderland themed megaways slot",
+        "image": "",
+        "provider": "Big Time Gaming",
+        "url": "https://example.com/play/white-rabbit",
+        "category": [
+            "Fantasy",
+            "Megaways"
+        ],
+        "rtp": 97.72,
+        "targetBlank": true
     }
 ]

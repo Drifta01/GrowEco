@@ -10,18 +10,32 @@ export interface jackpots {
   description: string;
 }
 
-  
-  export interface Game {
-    id: number;
-    title: string;
-    description: string;
-    imageUrl: string;
-  }
 
-  export interface GameCardProps {
-      title: string;
-      imagePath: string;
-      altText?: string;
-      width?: number;
-      height?: number;
-  }
+export interface Game {
+  id: number;
+  title: string;
+  description: string;
+  imageUrl: string;
+}
+
+export interface GameCardProps {
+  title: string;
+  imagePath: string;
+  altText?: string;
+  width?: number;
+  height?: number;
+}
+export interface SlotData {
+  id: string;
+  name: string;
+  freeSpins: boolean;
+  bonus: boolean;
+  bonusAmount: number;
+  maxWin: number;
+  provider: string;
+  url: string;
+  image: string;
+  description: string;
+  category: string;
+  targetBlank: true;
+}
