@@ -25,7 +25,10 @@ export type Game = {
   draw: string;
   game: string;
   gameId: string;
-  matches: {
+
+  match: {
+    team1Logo: string;
+    team2Logo: string;
     team1: number;
     team2: number;
     draw?: number | string; // Accept both number and string (though we'll handle strings)

@@ -2,14 +2,18 @@
 
 import { useState } from 'react';
 import Image from 'next/image';
-import sportBet from '@/db/sportBet.json';
-import Link from 'next/link';
+import matches from '@/db/matches.json';
 
 export const SportBet = () => {
   const [selectedBets, setSelectedBets] = useState<{
-    [key: string]: { selection: string; odds: number };
+    [key: string]: { team: string; odds: number };
   }>({});
   const [betAmount, setBetAmount] = useState<number>(10);
+  const [selectedCategory, setSelectedCategory] = useState('All');
+  const [searchQuery, setSearchQuery] = useState('');
+  const [currentPage, setCurrentPage] = useState(1);
+  const [selectedMatch, setSelectedMatch] = useState(null);
+  const matchesPerPage = 6;
 
   const calculateTotalOdds = () => {
     const selections = Object.values(selectedBets);
@@ -21,481 +25,305 @@ export const SportBet = () => {
   const totalOdds = calculateTotalOdds();
   const potentialWinnings = (totalOdds * betAmount).toFixed(2);
 
-  const toggleBetSelection = (
-    matchId: string,
-    selection: string,
-    odds: number,
-  ) => {
+  const toggleBetSelection = (matchId: string, team: string, odds: number) => {
     setSelectedBets((prev) => {
       const newSelections = { ...prev };
 
-      if (
-        newSelections[matchId] &&
-        newSelections[matchId].selection === selection
-      ) {
+      if (newSelections[matchId]?.team === team) {
         delete newSelections[matchId];
       } else {
-        newSelections[matchId] = { selection, odds };
+        newSelections[matchId] = { team, odds };
       }
 
       return newSelections;
     });
   };
 
-  const isSelected = (matchId: string, selection: string) => {
-    return selectedBets[matchId]?.selection === selection;
+  const isSelected = (matchId: string, team: string) => {
+    return selectedBets[matchId]?.team === team;
   };
 
+  const filteredMatches = matches
+    .filter(
+      (match) =>
+        match.category === selectedCategory || selectedCategory === 'All',
+    )
+    .filter(
+      (match) =>
+        match.team1.toLowerCase().includes(searchQuery.toLowerCase()) ||
+        match.team2.toLowerCase().includes(searchQuery.toLowerCase()),
+    );
+
+  const paginatedMatches = filteredMatches.slice(
+    (currentPage - 1) * matchesPerPage,
+    currentPage * matchesPerPage,
+  );
+
   return (
-    <div className="bg-gray-100 min-h-screen py-8">
-      <div className="container mx-auto px-4">
-        <div className="flex flex-col lg:flex-row gap-6">
-          {/* Main content */}
-          <div className="lg:w-3/4">
-            <div className="bg-white rounded-lg shadow-md p-6 mb-6">
-              <h1 className="text-2xl font-bold mb-2">Sports Betting</h1>
-              <p className="text-gray-600 mb-4">
-                Find the best odds across multiple sports
+    <main>
+      {/* Sports Overview Section */}
+      <section className="py-12 bg-gray-100">
+        <div className="container mx-auto px-4">
+          <h2 className="text-gray-600 text-4xl font-bold text-center mb-6">
+            Explore Sports and Betting Types
+          </h2>
+          <p className="text-gray-500 text-center mb-8">
+            Discover a variety of sports and betting options, including live
+            betting, over/under, and more.
+          </p>
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-6">
+            <div className="bg-white p-4 rounded-lg shadow-md text-center">
+              <Image
+                src="/images/popular-sports.png"
+                alt="Popular Sports"
+                width={50}
+                height={50}
+              />
+              <h3 className="text-gray-800 font-bold mt-2">Popular Sports</h3>
+              <p className="text-sm text-gray-500">
+                Football, Basketball, and more.
               </p>
-
-              {/* Sports navigation */}
-              <div className="flex overflow-x-auto pb-2 mb-6">
-                <div className="flex space-x-2">
-                  {Array.from(
-                    new Set(sportBet.map((sport) => sport.category)),
-                  ).map((category) => (
-                    <button
-                      key={category}
-                      className="px-4 py-2 text-sm font-medium rounded-full whitespace-nowrap bg-slate-600 text-white hover:bg-slate-700"
-                    >
-                      {category}
-                    </button>
-                  ))}
-                </div>
-              </div>
-
-              {/* Featured matches */}
-              <div className="mb-8">
-                <h2 className="text-xl font-semibold border-b border-gray-200 pb-2 mb-4">
-                  Featured Matches
-                </h2>
-
-                {sportBet
-                  .filter((sport) => sport.featured)
-                  .map((sport) => (
-                    <div key={sport.id} className="mb-6">
-                      <div className="flex items-center mb-3">
-                        <Image
-                          src={sport.icon}
-                          alt="sportsName"
-                          width={34}
-                          height={34}
-                          className="mr-2"
-                        />
-                        <h3 className="font-semibold text-lg">{sport.name}</h3>
-                      </div>
-
-                      <div className="bg-gray-50 rounded-lg overflow-hidden">
-                        {sport.matches.map((match) => (
-                          <div
-                            key={match.id}
-                            className="p-4 border-b border-gray-200 last:border-b-0 hover:bg-gray-100 transition-colors"
-                          >
-                            <div className="flex flex-col sm:flex-row sm:items-center justify-between mb-2">
-                              <div className="flex items-center mb-2 sm:mb-0">
-                                {match.league && (
-                                  <span className="inline-block bg-gray-200 text-gray-800 text-xs px-2 py-1 rounded mr-2">
-                                    {match.league}
-                                  </span>
-                                )}
-                                <span className="text-sm text-gray-500">
-                                  {match.date} · {match.time}
-                                </span>
-                              </div>
-
-                              {match.live && (
-                                <span className="inline-flex items-center bg-red-100 text-red-800 text-xs px-2 py-1 rounded">
-                                  <span className="w-2 h-2 bg-red-500 rounded-full mr-1"></span>
-                                  LIVE
-                                </span>
-                              )}
-                            </div>
-
-                            <div className="flex flex-col sm:flex-row items-center justify-between">
-                              <div className="flex items-center w-full sm:w-auto justify-between sm:justify-start mb-3 sm:mb-0">
-                                <div className="flex items-center space-x-2">
-                                  {'team1Logo' in match && match.team1Logo && (
-                                    <Image
-                                      src={match.team1Logo}
-                                      alt="teamLogo"
-                                      width={24}
-                                      height={24}
-                                    />
-                                  )}
-                                  <span className="font-medium">
-                                    {match.team1}
-                                  </span>
-                                </div>
-
-                                <span className="mx-4 text-gray-400">vs</span>
-
-                                <div className="flex items-center space-x-2">
-                                  {'team2Logo' in match && match.team2Logo && (
-                                    <Image
-                                      src={match.team2Logo}
-                                      alt={match.team2}
-                                      width={24}
-                                      height={24}
-                                    />
-                                  )}
-                                  <span className="font-medium">
-                                    {match.team2}
-                                  </span>
-                                </div>
-                              </div>
-
-                              <div className="flex space-x-2 w-full sm:w-auto justify-between">
-                                <button
-                                  className={`px-4 py-2 rounded border min-w-[80px] transition-colors ${
-                                    isSelected(match.id, match.team1)
-                                      ? 'bg-green-600 text-white border-green-600'
-                                      : 'bg-white border-gray-300 hover:bg-gray-100'
-                                  }`}
-                                  onClick={() =>
-                                    toggleBetSelection(
-                                      match.id,
-                                      match.team1,
-                                      match.odds.team1,
-                                    )
-                                  }
-                                >
-                                  <div className="text-sm font-medium">
-                                    {match.team1}
-                                  </div>
-                                  <div className="text-lg font-bold">
-                                    {match.odds?.team1?.toFixed(2) || 'N/A'}
-                                  </div>
-                                </button>
-
-                                {match.odds !== undefined && (
-                                  <button
-                                    className={`px-4 py-2 rounded border min-w-[80px] transition-colors ${
-                                      isSelected(match.id, 'Draw')
-                                        ? 'bg-green-600 text-white border-green-600'
-                                        : 'bg-white border-gray-300 hover:bg-gray-100'
-                                    }`}
-                                    onClick={() =>
-                                      toggleBetSelection(
-                                        match.id,
-                                        'Draw',
-                                        match.odds.team1,
-                                      )
-                                    }
-                                  >
-                                    <div className="text-sm font-medium">
-                                      Draw
-                                    </div>
-                                    <div className="text-lg font-bold">
-                                      {match.odds.team1.toFixed(2)}
-                                    </div>
-                                  </button>
-                                )}
-
-                                <button
-                                  className={`px-4 py-2 rounded border min-w-[80px] transition-colors ${
-                                    isSelected(match.id, match.team2)
-                                      ? 'bg-green-600 text-white border-green-600'
-                                      : 'bg-white border-gray-300 hover:bg-gray-100'
-                                  }`}
-                                  onClick={() =>
-                                    toggleBetSelection(
-                                      match.id,
-                                      match.team2,
-                                      match.odds.team2,
-                                    )
-                                  }
-                                >
-                                  <div className="text-sm font-medium">
-                                    {match.team2}
-                                  </div>
-                                  <div className="text-lg font-bold">
-                                    {match.odds?.team2?.toFixed(2) || 'N/A'}
-                                  </div>
-                                </button>
-                              </div>
-                            </div>
-
-                            <div className="mt-2 text-right">
-                              <Link
-                                href={`/match/${match.id}`}
-                                className="text-blue-600 text-sm hover:underline"
-                              >
-                                +{match.marketCount} more markets
-                              </Link>
-                            </div>
-                          </div>
-                        ))}
-                      </div>
-                    </div>
-                  ))}
-              </div>
-
-              {/* More sports */}
-              {sportBet
-                .filter((sport) => !sport.featured)
-                .map((sport) => (
-                  <div key={sport.id} className="mb-6">
-                    <div className="flex items-center justify-between mb-3">
-                      <div className="flex items-center">
-                        <Image
-                          src={sport.icon}
-                          alt={sport.name}
-                          width={54}
-                          height={54}
-                          className="mr-2"
-                        />
-                        <h3 className="font-semibold text-lg">{sport.name}</h3>
-                      </div>
-                      <Link
-                        href={`/sports/${sport.slug}`}
-                        className="text-blue-600 text-sm hover:underline"
-                      >
-                        View all
-                      </Link>
-                    </div>
-
-                    <div className="bg-gray-50 rounded-lg overflow-hidden">
-                      {sport.matches.slice(0, 2).map((match) => (
-                        <div
-                          key={match.id}
-                          className="p-4 border-b border-gray-200 last:border-b-0 hover:bg-gray-100 transition-colors"
-                        >
-                          <div className="flex flex-col sm:flex-row sm:items-center justify-between mb-2">
-                            <div className="flex items-center">
-                              {match.league && (
-                                <span className="inline-block bg-gray-200 text-gray-800 text-xs px-2 py-1 rounded mr-2">
-                                  {match.league}
-                                </span>
-                              )}
-                              <span className="text-sm text-gray-500">
-                                {match.date} · {match.time}
-                              </span>
-                            </div>
-                          </div>
-
-                          <div className="flex flex-col sm:flex-row items-center justify-between">
-                            <div className="flex items-center w-full sm:w-auto justify-between mb-3 sm:mb-0">
-                              <span className="font-medium">{match.team1}</span>
-                              <span className="mx-4 text-gray-400">vs</span>
-                              <span className="font-medium">{match.team2}</span>
-                            </div>
-
-                            <div className="flex space-x-2 w-full sm:w-auto justify-between">
-                              <button
-                                className={`px-3 py-1 rounded border transition-colors ${
-                                  isSelected(match.id, match.team1)
-                                    ? 'bg-green-600 text-white border-green-600'
-                                    : 'bg-white border-gray-300 hover:bg-gray-100'
-                                }`}
-                                onClick={() =>
-                                  toggleBetSelection(
-                                    match.id,
-                                    match.team1,
-                                    match.odds.team1,
-                                  )
-                                }
-                              >
-                                <div className="text-lg font-bold">
-                                  {match.odds.team1.toFixed(2)}
-                                </div>
-                              </button>
-
-                              {match.odds !== undefined && (
-                                <button
-                                  className={`px-3 py-1 rounded border transition-colors ${
-                                    isSelected(match.id, 'Draw')
-                                      ? 'bg-green-600 text-white border-green-600'
-                                      : 'bg-white border-gray-300 hover:bg-gray-100'
-                                  }`}
-                                  onClick={() =>
-                                    toggleBetSelection(
-                                      match.id,
-                                      'Draw',
-                                      match.odds.team1,
-                                    )
-                                  }
-                                >
-                                  <div className="text-lg font-bold">
-                                    {match.odds.team1.toFixed(2)}
-                                  </div>
-                                </button>
-                              )}
-
-                              <button
-                                className={`px-3 py-1 rounded border transition-colors ${
-                                  isSelected(match.id, match.team2)
-                                    ? 'bg-green-600 text-white border-green-600'
-                                    : 'bg-white border-gray-300 hover:bg-gray-100'
-                                }`}
-                                onClick={() =>
-                                  toggleBetSelection(
-                                    match.id,
-                                    match.team2,
-                                    match.odds.team2,
-                                  )
-                                }
-                              >
-                                <div className="text-lg font-bold">
-                                  {match.odds.team2.toFixed(2)}
-                                </div>
-                              </button>
-                            </div>
-                          </div>
-                        </div>
-                      ))}
-                    </div>
-                  </div>
-                ))}
             </div>
-          </div>
-
-          {/* Bet slip */}
-          <div className="lg:w-1/4">
-            <div className="bg-white rounded-lg shadow-md sticky top-6">
-              <div className="p-4 border-b border-gray-200">
-                <h2 className="font-bold text-lg">Bet Slip</h2>
-              </div>
-
-              {Object.keys(selectedBets).length > 0 ? (
-                <div className="p-4">
-                  <div className="space-y-3 mb-4">
-                    {Object.entries(selectedBets).map(([matchId, bet]) => {
-                      const match = sportBet
-                        .flatMap((sport) => sport.matches)
-                        .find((m) => m.id === matchId);
-                      if (!match) return null;
-
-                      return (
-                        <div
-                          key={matchId}
-                          className="bg-gray-50 p-3 rounded relative"
-                        >
-                          <button
-                            className="absolute top-2 right-2 text-gray-500 hover:text-red-500"
-                            onClick={() =>
-                              toggleBetSelection(
-                                matchId,
-                                bet.selection,
-                                bet.odds,
-                              )
-                            }
-                          >
-                            <svg
-                              xmlns="http://www.w3.org/2000/svg"
-                              className="h-4 w-4"
-                              viewBox="0 0 20 20"
-                              fill="currentColor"
-                            >
-                              <path
-                                fillRule="evenodd"
-                                d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-                                clipRule="evenodd"
-                              />
-                            </svg>
-                          </button>
-                          <div className="text-xs text-gray-500 mb-1">
-                            {match.league}
-                          </div>
-                          <div className="font-medium">
-                            {match.team1} vs {match.team2}
-                          </div>
-                          <div className="flex justify-between mt-2">
-                            <span className="text-sm">
-                              {bet.selection} (1X2)
-                            </span>
-                            <span className="font-bold">
-                              {bet.odds.toFixed(2)}
-                            </span>
-                          </div>
-                        </div>
-                      );
-                    })}
-                  </div>
-
-                  <div className="mb-4">
-                    <label className="block text-sm font-medium text-gray-700 mb-1">
-                      Bet Amount
-                    </label>
-                    <div className="relative">
-                      <span className="absolute inset-y-0 left-0 pl-3 flex items-center text-gray-500">
-                        $
-                      </span>
-                      <input
-                        type="number"
-                        min="1"
-                        value={betAmount}
-                        onChange={(e) =>
-                          setBetAmount(Math.max(1, parseFloat(e.target.value)))
-                        }
-                        className="pl-8 block w-full rounded-md border border-gray-300 py-2 px-3 focus:border-blue-500 focus:ring-blue-500"
-                      />
-                    </div>
-                  </div>
-
-                  <div className="bg-gray-100 p-3 rounded mb-4">
-                    <div className="flex justify-between mb-2">
-                      <span className="text-sm text-gray-600">Type</span>
-                      <span className="font-medium">
-                        Accumulator ({Object.keys(selectedBets).length})
-                      </span>
-                    </div>
-                    <div className="flex justify-between mb-2">
-                      <span className="text-sm text-gray-600">Total Odds</span>
-                      <span className="font-bold">{totalOdds.toFixed(2)}</span>
-                    </div>
-                    <div className="flex justify-between">
-                      <span className="text-sm text-gray-600">
-                        Potential Win
-                      </span>
-                      <span className="font-bold text-green-600">
-                        ${potentialWinnings}
-                      </span>
-                    </div>
-                  </div>
-
-                  <button className="bg-green-600 text-white w-full py-3 rounded-md font-bold hover:bg-green-700 transition-colors">
-                    Place Bet
-                  </button>
-                </div>
-              ) : (
-                <div className="p-4 text-center">
-                  <div className="text-gray-500 mb-4">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      className="mx-auto h-12 w-12"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
-                      />
-                    </svg>
-                  </div>
-                  <p className="text-gray-500">Your bet slip is empty</p>
-                  <p className="text-sm text-gray-400 mt-1">
-                    Click on any odds to add a selection
-                  </p>
-                </div>
-              )}
+            <div className="bg-white p-4 rounded-lg shadow-md text-center">
+              <Image
+                src="/images/american-sports.png"
+                alt="American Sports"
+                width={50}
+                height={50}
+              />
+              <h3 className="text-gray-800 font-bold mt-2">American Sports</h3>
+              <p className="text-sm text-gray-500">NFL, NBA, MLB, and NHL.</p>
+            </div>
+            <div className="bg-white p-4 rounded-lg shadow-md text-center">
+              <Image
+                src="/images/winter-sports.png"
+                alt="Winter Sports"
+                width={50}
+                height={50}
+              />
+              <h3 className="text-gray-800 font-bold mt-2">Winter Sports</h3>
+              <p className="text-sm text-gray-500">Hockey, Skiing, and more.</p>
+            </div>
+            <div className="bg-white p-4 rounded-lg shadow-md text-center">
+              <Image
+                src="/images/combat-sports.png"
+                alt="Combat Sports"
+                width={50}
+                height={50}
+              />
+              <h3 className="text-gray-800 font-bold mt-2">Combat Sports</h3>
+              <p className="text-sm text-gray-500">MMA, Boxing, and more.</p>
+            </div>
+            <div className="bg-white p-4 rounded-lg shadow-md text-center">
+              <Image
+                src="/images/live-betting.png"
+                alt="Live Betting"
+                width={50}
+                height={50}
+              />
+              <h3 className="text-gray-800 font-bold mt-2">Live Betting</h3>
+              <p className="text-sm text-gray-500">
+                Bet on matches in real-time.
+              </p>
             </div>
           </div>
         </div>
-      </div>
-    </div>
+      </section>
+
+      {/* Filters Section */}
+      <section className="py-6 bg-white">
+        <div className="container mx-auto px-4 flex flex-col sm:flex-row justify-between items-center">
+          <select
+            value={selectedCategory}
+            onChange={(e) => setSelectedCategory(e.target.value)}
+            className="border border-gray-300 rounded-md px-4 py-2 mb-4 sm:mb-0"
+          >
+            <option value="All">All Categories</option>
+            <option value="Popular">Popular</option>
+            <option value="American Sports">American Sports</option>
+            <option value="Winter Sports">Winter Sports</option>
+            <option value="Combat Sports">Combat Sports</option>
+          </select>
+          <input
+            type="text"
+            placeholder="Search matches..."
+            value={searchQuery}
+            onChange={(e) => setSearchQuery(e.target.value)}
+            className="border border-gray-300 rounded-md px-4 py-2 w-full sm:w-auto"
+          />
+        </div>
+      </section>
+
+      {/* Sports Betting Section */}
+      <section id="sports-betting" className="py-12 bg-gray-50">
+        <div className="container mx-auto px-4">
+          <h2 className="text-gray-600 text-4xl font-bold text-center mb-10">
+            Featured Matches
+          </h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            {paginatedMatches.map((match) => (
+              <div key={match.id} className="bg-white rounded-lg shadow-md p-4">
+                <div className="flex items-center justify-between mb-3">
+                  <div className="flex items-center">
+                    <Image
+                      src={match.team1Logo || '/placeholder.jpg'}
+                      alt={match.team1}
+                      width={24}
+                      height={24}
+                      className="mr-2"
+                    />
+                    <span>{match.team1}</span>
+                  </div>
+                  <span className="text-gray-400">vs</span>
+                  <div className="flex items-center">
+                    <span>{match.team2}</span>
+                    <Image
+                      src={match.team2Logo || '/placeholder.jpg'}
+                      alt={match.team2}
+                      width={24}
+                      height={24}
+                      className="ml-2"
+                    />
+                  </div>
+                </div>
+                <div className="flex justify-between items-center mt-2">
+                  <button
+                    onClick={() =>
+                      toggleBetSelection(
+                        match.id,
+                        match.team1,
+                        match.odds.team1,
+                      )
+                    }
+                    className={`px-4 py-2 rounded-md font-bold ${
+                      isSelected(match.id, match.team1)
+                        ? 'bg-blue-600 text-white'
+                        : 'bg-gray-200 text-gray-800 hover:bg-gray-300'
+                    }`}
+                  >
+                    {match.team1} ({match.odds.team1.toFixed(2)})
+                  </button>
+                  <button
+                    onClick={() =>
+                      toggleBetSelection(
+                        match.id,
+                        match.team2,
+                        match.odds.team2,
+                      )
+                    }
+                    className={`px-4 py-2 rounded-md font-bold ${
+                      isSelected(match.id, match.team2)
+                        ? 'bg-blue-600 text-white'
+                        : 'bg-gray-200 text-gray-800 hover:bg-gray-300'
+                    }`}
+                  >
+                    {match.team2} ({match.odds.team2.toFixed(2)})
+                  </button>
+                </div>
+              </div>
+            ))}
+          </div>
+          <div className="flex justify-center mt-6">
+            <button
+              onClick={() => setCurrentPage((prev) => Math.max(prev - 1, 1))}
+              className="px-4 py-2 bg-gray-200 rounded-l-md"
+            >
+              Previous
+            </button>
+            <button
+              onClick={() =>
+                setCurrentPage((prev) =>
+                  Math.min(
+                    prev + 1,
+                    Math.ceil(filteredMatches.length / matchesPerPage),
+                  ),
+                )
+              }
+              className="px-4 py-2 bg-gray-200 rounded-r-md"
+            >
+              Next
+            </button>
+          </div>
+        </div>
+      </section>
+
+      {/* Bet Slip Section */}
+      <section className="py-12 bg-gray-50">
+        <div className="container mx-auto px-4">
+          <h2 className="text-gray-600 text-4xl font-bold text-center mb-10">
+            Your Bet Slip
+          </h2>
+          <div className="bg-white p-6 rounded-lg shadow-lg">
+            {Object.keys(selectedBets).length > 0 ? (
+              <div>
+                <div className="space-y-4 mb-6">
+                  {Object.entries(selectedBets).map(([matchId, bet]) => (
+                    <div
+                      key={matchId}
+                      className="flex justify-between items-center bg-gray-100 p-4 rounded-md shadow-sm"
+                    >
+                      <div>
+                        <p className="text-gray-800 font-semibold">
+                          {bet.team}
+                        </p>
+                        <p className="text-sm text-gray-500">
+                          Odds: {bet.odds.toFixed(2)}
+                        </p>
+                      </div>
+                      <button
+                        className="text-red-500 hover:text-red-700 font-medium"
+                        onClick={() =>
+                          toggleBetSelection(matchId, bet.team, bet.odds)
+                        }
+                      >
+                        Remove
+                      </button>
+                    </div>
+                  ))}
+                </div>
+                <div className="border-t border-gray-200 pt-4">
+                  <div className="flex justify-between items-center mb-4">
+                    <span className="text-gray-600 font-medium">
+                      Total Odds:
+                    </span>
+                    <span className="text-gray-800 font-bold">
+                      {totalOdds.toFixed(2)}
+                    </span>
+                  </div>
+                  <div className="flex justify-between items-center mb-4">
+                    <span className="text-gray-600 font-medium">
+                      Bet Amount:
+                    </span>
+                    <input
+                      type="number"
+                      value={betAmount}
+                      onChange={(e) => setBetAmount(Number(e.target.value))}
+                      className="border border-gray-300 rounded-md px-3 py-2 w-24 text-right"
+                    />
+                  </div>
+                  <div className="flex justify-between items-center mb-6">
+                    <span className="text-gray-600 font-medium">
+                      Potential Winnings:
+                    </span>
+                    <span className="text-green-600 font-bold text-lg">
+                      ${potentialWinnings}
+                    </span>
+                  </div>
+                  <button className="bg-blue-600 text-white w-full py-3 rounded-md font-bold hover:bg-blue-700 transition-colors">
+                    Place Bet
+                  </button>
+                </div>
+              </div>
+            ) : (
+              <p className="text-gray-500 text-center">
+                Your bet slip is empty. Select a team to add it to your bet
+                slip.
+              </p>
+            )}
+          </div>
+        </div>
+      </section>
+    </main>
   );
 };
 

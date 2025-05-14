@@ -3,6 +3,7 @@ import { Header } from '@/components/Header';
 import React from 'react';
 import './globals.css';
 import { NavMenu } from '@/components/NavMenu';
+import Hero from '@/components/Hero';
 
 export default function RootLayout({
   children,
@@ -14,6 +15,7 @@ export default function RootLayout({
       <body className="antialiased">
         <Header />
         <NavMenu />
+        <Hero />
         {children}
 
         <Footer />

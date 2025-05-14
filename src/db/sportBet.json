@@ -12,8 +12,8 @@
         "team1": "Arsenal",
         "draw": "even",
         "team2": "Manchester United",
-        "team1Logo": "/team-logos/arsenal.png",
-        "team2Logo": "/team-logos/man-united.png",
+        "team1Logo": "/004-france.png",
+        "team2Logo": "/002-united-kingdom.png",
         "date": "Today",
         "time": "19:45",
         "league": "Premier League",
@@ -30,8 +30,8 @@
         "id": "match-002",
         "team1": "Barcelona",
         "team2": "Real Madrid",
-        "team1Logo": "/team-logos/barcelona.png",
-        "team2Logo": "/team-logos/real-madrid.png",
+        "team1Logo": "/010-sweden.png",
+        "team2Logo": "/013-denmark.png",
         "date": "Tomorrow",
         "time": "20:00",
         "league": "La Liga",
@@ -47,8 +47,8 @@
         "id": "match-003",
         "team1": "Bayern Munich",
         "team2": "Dortmund",
-        "team1Logo": "/team-logos/bayern.png",
-        "team2Logo": "/team-logos/dortmund.png",
+        "team1Logo": "/014-brazil.png",
+        "team2Logo": "/011-australia.png",
         "date": "May 4",
         "time": "17:30",
         "league": "Bundesliga",
@@ -91,7 +91,7 @@
         "id": "match-005",
         "team1": "Golden State Warriors",
         "team2": "Brooklyn Nets",
-        "team1Logo": "/team-logos/warriors.png",
+        "team1Logo": "/001-united-states.png",
         "team2Logo": "/team-logos/nets.png",
         "date": "Tomorrow",
         "time": "02:00",
@@ -258,8 +258,3 @@
     ]
   }
 ]
-
-
-
-
-

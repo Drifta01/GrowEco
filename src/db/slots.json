@@ -586,5 +586,35 @@
         ],
         "rtp": 97.72,
         "targetBlank": true
+    },
+    {
+        "id": "slot-001",
+        "name": "Mega Jackpot",
+        "provider": "NetEnt",
+        "image": "/images/slots/mega-jackpot.jpg",
+        "url": "https://example.com/mega-jackpot",
+        "targetBlank": true,
+        "category": "Jackpot",
+        "rating": 4,
+        "ratingCount": 120,
+        "rtp": 96.5,
+        "popularity": 95,
+        "description": "A thrilling jackpot slot with massive rewards.",
+        "featured": true
+    },
+    {
+        "id": "slot-002",
+        "name": "Starburst",
+        "provider": "NetEnt",
+        "image": "/images/slots/starburst.jpg",
+        "url": "https://example.com/starburst",
+        "targetBlank": true,
+        "category": "Free Spins",
+        "rating": 5,
+        "ratingCount": 200,
+        "rtp": 96.1,
+        "popularity": 98,
+        "description": "A classic slot with vibrant graphics and free spins.",
+        "featured": true
     }
 ]

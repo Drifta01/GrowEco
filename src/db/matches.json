@@ -1,0 +1,87 @@
+[
+    {
+        "id": "match-001",
+        "team1": "Arsenal",
+        "team2": "Manchester United",
+        "team1Logo": "/images/arsenal-logo.png",
+        "team2Logo": "/images/manchester-united-logo.png",
+        "date": "2025-05-20",
+        "time": "18:30",
+        "league": "Premier League",
+        "category": "Popular",
+        "live": true,
+        "odds": {
+            "team1": 2.10,
+            "team2": 1.75
+        },
+        "marketCount": 45
+    },
+    {
+        "id": "match-002",
+        "team1": "Golden State Warriors",
+        "team2": "Los Angeles Lakers",
+        "team1Logo": "/images/warriors-logo.png",
+        "team2Logo": "/images/lakers-logo.png",
+        "date": "2025-05-21",
+        "time": "20:00",
+        "league": "NBA",
+        "category": "American Sports",
+        "live": false,
+        "odds": {
+            "team1": 1.90,
+            "team2": 2.00
+        },
+        "marketCount": 38
+    },
+    {
+        "id": "match-003",
+        "team1": "New York Rangers",
+        "team2": "Boston Bruins",
+        "team1Logo": "/images/rangers-logo.png",
+        "team2Logo": "/images/bruins-logo.png",
+        "date": "2025-05-22",
+        "time": "19:00",
+        "league": "NHL",
+        "category": "Winter Sports",
+        "live": false,
+        "odds": {
+            "team1": 2.30,
+            "team2": 1.60
+        },
+        "marketCount": 25
+    },
+    {
+        "id": "match-004",
+        "team1": "Israel Adesanya",
+        "team2": "Alex Pereira",
+        "team1Logo": "/images/adesanya-logo.png",
+        "team2Logo": "/images/pereira-logo.png",
+        "date": "2025-05-23",
+        "time": "22:00",
+        "league": "UFC 290",
+        "category": "Combat Sports",
+        "live": false,
+        "odds": {
+            "team1": 1.85,
+            "team2": 2.10
+        },
+        "marketCount": 30
+    },
+    {
+        "id": "match-005",
+        "team1": "Real Madrid",
+        "team2": "Barcelona",
+        "team1Logo": "/images/real-madrid-logo.png",
+        "team2Logo": "/images/barcelona-logo.png",
+        "date": "2025-05-24",
+        "time": "21:00",
+        "league": "La Liga",
+        "category": "Popular",
+        "live": true,
+        "odds": {
+            "team1": 2.50,
+            "team2": 1.90
+        },
+        "marketCount": 50
+    }
+]

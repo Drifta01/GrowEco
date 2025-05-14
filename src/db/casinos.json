@@ -13,6 +13,9 @@
         "image": "/wildz.webp",
         "url": "https://www.wildz.com/nz/",
         "targetBlank": true,
+        "category": "Top Rated",
+        "description": "A vibrant casino offering exciting games and generous bonuses.",
+        "provider": "NetEnt",
         "promotions": {
             "title": "Latest Promotions",
             "items": [
@@ -62,6 +65,9 @@
         "image": "/vegas-palms-logo.png",
         "url": "https://secure.vegaspalmscasino.com/premium/casino/for-you/For%20You",
         "targetBlank": true,
+        "category": "Popular",
+        "description": "A classic casino with a wide range of games and promotions.",
+        "provider": "Microgaming",
         "promotions": {
             "title": "Latest Promotions",
             "items": [
@@ -111,6 +117,9 @@
         "image": "/ruby-fortune-logo.png",
         "url": "https://secure.rubyfortune.com/premium/casino/for-you/For%20You",
         "targetBlank": true,
+        "category": "New",
+        "description": "A premium casino with exclusive rewards and VIP programs.",
+        "provider": "Playtech",
         "promotions": {
             "title": "Latest Promotions",
             "items": [
@@ -160,6 +169,9 @@
         "image": "/48983.jpg",
         "url": "https://secure.platinumplaycasino.com/premium/casino/for-you/For%20You",
         "targetBlank": true,
+        "category": "Top Rated",
+        "description": "A luxurious casino with high-quality games and promotions.",
+        "provider": "Evolution Gaming",
         "promotions": {
             "title": "Latest Promotions",
             "items": [
@@ -586,5 +598,25 @@
                 }
             ]
         }
+    },
+    {
+        "id": "casino-001",
+        "name": "Royal Vegas Casino",
+        "image": "/images/casinos/royal-vegas.jpg",
+        "url": "https://example.com/royal-vegas",
+        "targetBlank": true,
+        "category": "Top Rated",
+        "rating": 4.8,
+        "description": "Experience the royal treatment with top-notch games and bonuses."
+    },
+    {
+        "id": "casino-002",
+        "name": "Jackpot City Casino",
+        "image": "/images/casinos/jackpot-city.jpg",
+        "url": "https://example.com/jackpot-city",
+        "targetBlank": true,
+        "category": "Popular",
+        "rating": 4.5,
+        "description": "A city of jackpots awaits you with exciting games and rewards."
     }
 ]
